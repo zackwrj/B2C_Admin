@@ -5,12 +5,10 @@ using System.Data;
 using lv_Common;
 using lv_B2C.Model;
 using System.Collections;
-namespace lv_B2C.BLL
-{
-    //Product
-    public partial class LogisticsInfoExt : LogisticsInfo
-    {
-
+namespace lv_B2C.BLL {
+	 	//LogisticsInfo
+	public partial class LogisticsInfoExt : LogisticsInfo
+	{
         public Hashtable GetHashList(string strWhere, string fieldOrder, int pageIndex, int pageSize)
         {
             Hashtable result = new Hashtable();
@@ -19,5 +17,5 @@ namespace lv_B2C.BLL
             result["total"] = BLL.Pager.PageExtend.GetPageCount(strWhere, "LogisticsInfo");
             return result;
         }
-    }
+	}
 }
