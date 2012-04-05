@@ -9,7 +9,17 @@ namespace lv_B2C.DAL
 	//ArticleClass
 	public partial class ArticleClassExt : ArticleClass
 	{
-				
+        public int HasArticleClassSon(int articleClassID)
+        {
+            try
+            {
+                return Convert.ToInt32(lv_DBUtility.DBManager.Instance().ExecuteScalar(CommandType.StoredProcedure, "ArticleClass_HasSon", new SqlParameter("@ArticleClassID", articleClassID)));
+            }
+            catch
+            {
+                return -1;
+            }
+        }
 	}
 }
 

@@ -88,7 +88,6 @@
     <Compile Include="DB\LogisticsCompany.cs" />
     <Compile Include="DBExt\LogisticsCompanyExt.cs" />
     <Compile Include="DB\LogisticsInfo.cs" />
-    <Compile Include="DBExt\LogisticsInfoExt.cs" />
     <Compile Include="DB\LogisticsSon.cs" />
     <Compile Include="DBExt\LogisticsSonExt.cs" />
     <Compile Include="DB\Msg.cs" />
@@ -108,7 +107,6 @@
     <Compile Include="DBExt\ProductClassExt.cs" />
     <Compile Include="DB\ProductConn.cs" />
     <Compile Include="DBExt\ProductConnExt.cs" />
-    <Compile Include="DB\ProductExt.cs" />
     <Compile Include="DB\ProductFieldClass.cs" />
     <Compile Include="DBExt\ProductFieldClassExt.cs" />
     <Compile Include="DB\ProductFields.cs" />

@@ -13,6 +13,7 @@ namespace lv_B2C.Web.Adminlvcn._1ref.base_ajax
     {
         BLL.ProductClassExt bllProductClass = new BLL.ProductClassExt();
         BLL.ProductBrandExt bllProductBrand = new BLL.ProductBrandExt();
+        BLL.ArticleClassExt bllArticleClass = new BLL.ArticleClassExt();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -28,13 +29,24 @@ namespace lv_B2C.Web.Adminlvcn._1ref.base_ajax
         StringBuilder sb = new StringBuilder();
 
         /// <summary>
-        /// 获取分类
+        /// 获取产品分类
         /// </summary>
         /// <returns></returns>
         public void GetInputSelectClass()
         {
             sb.Append("[");
             RecursionNav(0);
+            sb.Append("]");
+            Response.Write(sb.ToString());
+        }
+        /// <summary>
+        /// 获取文章分类
+        /// </summary>
+        /// <returns></returns>
+        public void GetArticleInputSelectClass()
+        {
+            sb.Append("[");
+            RecursionArticleNav(0);
             sb.Append("]");
             Response.Write(sb.ToString());
         }
@@ -59,9 +71,9 @@ namespace lv_B2C.Web.Adminlvcn._1ref.base_ajax
             Response.Write(sb.ToString());
         }
 
-        #region 递归分类
+        #region 递归产品分类
         /// <summary>
-        /// 递归类
+        /// 递归产品类
         /// </summary>
         /// <summary>
         public void RecursionNav(int topClassID)
@@ -79,6 +91,36 @@ namespace lv_B2C.Web.Adminlvcn._1ref.base_ajax
                     sb.Append("]");
                 }
                 if (i < listProductClass.Count - 1)
+                {
+                    sb.Append("},");
+                }
+                else
+                {
+                    sb.Append("}");
+                }
+            }
+        }
+        #endregion
+        #region 递归文章分类
+        /// <summary>
+        /// 递归文章类
+        /// </summary>
+        /// <summary>
+        public void RecursionArticleNav(int topClassID)
+        {
+            IList<lv_B2C.Model.ArticleClass> listArticleClass = bllArticleClass.GetList("ParentID=" + topClassID);
+            for (int i = 0; i < listArticleClass.Count; i++)
+            {
+                sb.Append("{id: \"" + listArticleClass[i].ArticleClassID
+                    + "\", text: \"" + listArticleClass[i].Title + "\"");
+
+                if (bllArticleClass.HasProductClassSon(listArticleClass[i].ArticleClassID))
+                {
+                    sb.Append(",children:[");
+                    RecursionArticleNav(listArticleClass[i].ArticleClassID);
+                    sb.Append("]");
+                }
+                if (i < listArticleClass.Count - 1)
                 {
                     sb.Append("},");
                 }

@@ -14,6 +14,7 @@
     <AssemblyName>lv_B2C.Web</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -33,15 +34,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AjaxPro.2">
+      <HintPath>..\dll\AjaxPro.2.dll</HintPath>
+    </Reference>
     <Reference Include="MySql.Data, Version=5.1.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>E:\system\桌面\MySql.Data.dll</HintPath>
+      <HintPath>..\dll\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json.Net20">
-      <HintPath>E:\system\桌面\Newtonsoft.Json.Net20.dll</HintPath>
+      <HintPath>..\dll\Newtonsoft.Json.Net20.dll</HintPath>
     </Reference>
     <Reference Include="PluSoft">
-      <HintPath>E:\system\桌面\PluSoft.dll</HintPath>
+      <HintPath>..\dll\PluSoft.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -1430,6 +1434,16 @@
     <Content Include="Adminlvcn\1ref\js\pages\product\productclass.js" />
     <Content Include="Adminlvcn\1ref\js\pages\product\product_edit.js" />
     <Content Include="Adminlvcn\1ref\js\validation.js" />
+    <Content Include="Adminlvcn\ArticleManage\ArticleClass\ajax\ajax.aspx" />
+    <Content Include="Adminlvcn\ArticleManage\ArticleClass\css\List.css" />
+    <Content Include="Adminlvcn\ArticleManage\ArticleClass\js\list.js" />
+    <Content Include="Adminlvcn\ArticleManage\ArticleClass\List.aspx" />
+    <Content Include="Adminlvcn\ArticleManage\Article\ajax\ajax.aspx" />
+    <Content Include="Adminlvcn\ArticleManage\Article\css\modify.css" />
+    <Content Include="Adminlvcn\ArticleManage\Article\js\list.js" />
+    <Content Include="Adminlvcn\ArticleManage\Article\js\modify.js" />
+    <Content Include="Adminlvcn\ArticleManage\Article\List.aspx" />
+    <Content Include="Adminlvcn\ArticleManage\Article\Modify.aspx" />
     <Content Include="Adminlvcn\ChannelItemManage\SiteMenu\ajax\ajax.aspx" />
     <Content Include="Adminlvcn\ChannelItemManage\SiteMenu\css\Modify.css" />
     <Content Include="Adminlvcn\ChannelItemManage\SiteMenu\js\List.js" />
@@ -1910,6 +1924,35 @@
     </Compile>
     <Compile Include="Adminlvcn\1ref\controls\UpLoad\UpLoad\UpLoadFile.aspx.designer.cs">
       <DependentUpon>UpLoadFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adminlvcn\ArticleManage\ArticleClass\ajax\ajax.aspx.cs">
+      <DependentUpon>ajax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlvcn\ArticleManage\ArticleClass\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlvcn\ArticleManage\ArticleClass\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adminlvcn\ArticleManage\Article\ajax\ajax.aspx.cs">
+      <DependentUpon>ajax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlvcn\ArticleManage\Article\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlvcn\ArticleManage\Article\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adminlvcn\ArticleManage\Article\Modify.aspx.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlvcn\ArticleManage\Article\Modify.aspx.designer.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
     </Compile>
     <Compile Include="Adminlvcn\ChannelItemManage\SiteMenu\ajax\ajax.aspx.cs">
       <DependentUpon>ajax.aspx</DependentUpon>

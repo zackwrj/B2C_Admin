@@ -63,14 +63,14 @@
             </div>
             <div title="物流管理">            
                 <ul id="tree4" onselectnode="onNodeSelect" class="mini-tree" style="width:100%;height:100%;" showTreeIcon="true" textField="text" valueField="id" >       
-                     <li><span>运费模板</span></li>
+                     <li><span>邮费模板</span></li>
                      <li><span>物流公司</span></li>
                 </ul>
             </div>
             <div title="文章管理">
                 <ul id="tree5" onselectnode="onNodeSelect" class="mini-tree" style="width:100%;height:100%;" showTreeIcon="true" textField="text" valueField="id" >       
-                     <li><span>文章列表</span></li>
-                     <li><span>文章分类</span></li>
+                     <li><a href="ArticleManage/Article/List.aspx" target="main" onclick='waitClick()'>文章列表</a></li>
+                     <li><a href="ArticleManage/ArticleClass/List.aspx" target="main" onclick='waitClick()'>文章分类</a></li>
                      <li><span>文章关键字</span></li>
                 </ul>
             </div>
@@ -122,7 +122,7 @@
         <!--左导航 end-->
     </div>
     <div id="iframe_parent" title="center" region="center" bodyStyle="overflow:hidden;">
-        <iframe id="main" onload="iframeLoad()" frameborder="0" name="main" src="LogisticsManage/Freight/List.aspx" style="width:100%;height:100%;" border="0"></iframe>
+        <iframe id="main" onload="iframeLoad()" frameborder="0" name="main" src="ArticleManage/Article/List.aspx" style="width:100%;height:100%;" border="0"></iframe>
     </div>
 </div>
 <script src="1ref/js/js.js" type="text/javascript"></script>

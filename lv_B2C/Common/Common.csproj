@@ -105,31 +105,34 @@
   <ItemGroup>
     <Reference Include="COM.Excel, Version=1.1.1606.17082, Culture=neutral">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\ocean\Law律师网\附件\Common_Lib\COM.Excel.dll</HintPath>
+      <HintPath>..\dll\COM.Excel.dll</HintPath>
     </Reference>
     <Reference Include="Excel, Version=1.5.0.0, Culture=neutral">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\ocean\Law律师网\附件\Common_Lib\Excel.dll</HintPath>
+      <HintPath>..\dll\Excel.dll</HintPath>
     </Reference>
     <Reference Include="IBatisNet.Common, Version=1.4.1.0, Culture=neutral, PublicKeyToken=ed781d9fc396c6ca, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\ocean\Law律师网\附件\Common_Lib\IBatisNet.Common.dll</HintPath>
+      <HintPath>..\dll\IBatisNet.Common.dll</HintPath>
     </Reference>
     <Reference Include="IBatisNet.DataMapper, Version=1.5.1.0, Culture=neutral, PublicKeyToken=ed781d9fc396c6ca, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\ocean\Law律师网\附件\Common_Lib\IBatisNet.DataMapper.dll</HintPath>
+      <HintPath>..\dll\IBatisNet.DataMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="lv_Common">
+      <HintPath>..\dll\lv_Common.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data, Version=5.1.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\ocean\Law律师网\附件\Common_Lib\MySql.Data.dll</HintPath>
+      <HintPath>..\dll\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="OpenSmtp, Version=1.11.0.34196, Culture=neutral">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\ocean\Law律师网\附件\Common_Lib\OpenSmtp.dll</HintPath>
+      <HintPath>..\dll\OpenSmtp.dll</HintPath>
     </Reference>
     <Reference Include="OWC10Chart, Version=1.0.2074.16784, Culture=neutral">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\ocean\Law律师网\附件\Common_Lib\OWC10Chart.dll</HintPath>
+      <HintPath>..\dll\OWC10Chart.dll</HintPath>
     </Reference>
     <Reference Include="System">
       <Name>System</Name>
