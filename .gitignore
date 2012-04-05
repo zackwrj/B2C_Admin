@@ -23,6 +23,7 @@
 *.lib
 *.sbr
 *.sdf
+*.dll
 ipch/
 obj/
 [Bb]in
@@ -55,6 +56,9 @@ packages/
 db/changelog/diff-changelog.xml
 db/diff.bat
 logs/
+
+#folder
+
 /Model/obj/
 /Model/bin/
 
