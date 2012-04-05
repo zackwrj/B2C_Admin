@@ -45,14 +45,24 @@ namespace lv_B2C.Web.Adminlvcn.ProductManage.Product.ajax
 
                     if (strClass != "")
                     {
+                        string temp = "";
                         IList<Model.ProductConn> ilistProductConn = bllProductConn.GetList("ProductClassID in (" + strClass + ")");
                         for (int i = 0; i < ilistProductConn.Count; i++)
                         {
-                            strWhere += " productID=" + ilistProductConn[i].ProductID;
+                            temp +=  ilistProductConn[i].ProductID;
                             if (i < ilistProductConn.Count - 1)
                             {
-                                strWhere += " or ";
+                                temp += ",";
                             }
+                        }
+                        if (temp != "")
+                        {
+                            strWhere += " productid in (" + temp + ")";
+                        }
+                        else
+                        {
+                            Response.Write(null);
+                            Response.End();
                         }
                     }
                     if (strBrand != "")
