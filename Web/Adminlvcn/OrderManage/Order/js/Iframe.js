@@ -2,7 +2,7 @@
 //        var grid = mini.get("datagrid1");
 //        grid.load();
 //        grid.sortBy("ProductId", "desc");
-//加载商品信息End
+//加载商品111信息End
 
 
 mini.parse();
