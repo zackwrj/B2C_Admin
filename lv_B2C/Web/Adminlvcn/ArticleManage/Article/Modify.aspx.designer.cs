@@ -7,10 +7,10 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace lv_B2C.Web.Adminlvcn.ArticleManage.ArticleClass {
+namespace lv_B2C.Web.Adminlvcn.ArticleManage.Article {
     
     
-    public partial class List {
+    public partial class Modify {
         
         /// <summary>
         /// Head1 控件。
@@ -31,13 +31,13 @@ namespace lv_B2C.Web.Adminlvcn.ArticleManage.ArticleClass {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// litClass 控件。
+        /// CheckBox1 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal litClass;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBox1;
         
         /// <summary>
         /// btnSave 控件。
@@ -47,6 +47,24 @@ namespace lv_B2C.Web.Adminlvcn.ArticleManage.ArticleClass {
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnSave;
+        
+        /// <summary>
+        /// btnAdd 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnAdd;
+        
+        /// <summary>
+        /// btnReset 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputButton btnReset;
         
         /// <summary>
         /// btnBack 控件。

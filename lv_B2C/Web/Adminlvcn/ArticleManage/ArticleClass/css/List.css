@@ -1,0 +1,43 @@
+﻿
+.product-class-main{position:relative;border:1px solid #9f9f9f; height:400px; overflow: scroll;min-width:600px; }
+.product-class-main .abs-son{ width: 100%;left: 0px;float:left;min-width:600px;}
+.product-class-main .top{min-width:600px; width: 100%;height:25px;float:left;background:#E7EBEF url(/base_js/miniui/themes/default/images/grid/header.png) repeat-x 0 0;}
+.product-class-main .top li{list-style:none;display:block;height:25px;line-height:25px;font-weight:bold;}
+.product-class-main .top ul{padding:0px;margin:0px;}
+        
+#tree1 span b{display:block;float:left;font-weight:normal;}
+#tree1 span samp {display:block;width:325px;height:25px;position:absolute;right:0;}
+#tree1 span samp .add_image{width:100px;height:22px;float:left;text-align:center;}
+#tree1 span samp .add_image .add{width :100px;color:#b2b2b2;height:22px;cursor:pointer;background:url(/base_js/miniui/themes/icons/nocolornoimage.gif) 5px 4px no-repeat;}
+#tree1 span samp .add_image .edit{}
+        
+#tree1 span samp .add_image .edit .view_img{width:14px;height:14px;cursor:pointer; float:left;margin:3px 5px;background:url(/base_js/miniui/themes/icons/noimage.gif)}
+#tree1 span samp .add_image .edit .edit_img{float:left;margin-right:5px;cursor:pointer;}
+#tree1 span samp .add_image .edit .del_img{float:left;cursor:pointer;}
+        
+#tree1 span samp .add_image .edit .edit_img:hover,#tree1 span samp .add_image .edit .del_img:hover{color:blue;}
+#tree1 span samp .add_image .add:hover{color:#000;}
+        
+#tree1 span samp .action{width:100px;height:22px;float:right;text-align:center;}
+#tree1 span samp .action .up,#tree1 span samp .action .down,#tree1 span samp .action .del,
+#tree1 span samp .action .dis-up,#tree1 span samp .action .dis-down,#tree1 span samp .action .dis-del
+{
+    width:16px;height:16px;float:right;margin-right:8px;cursor:pointer;
+}
+#tree1 span samp .action .dis-up,#tree1 span samp .action .dis-down,#tree1 span samp .action .dis-del{cursor:default;}
+#tree1 span samp .action .up,#tree1 span samp .action .down,#tree1 span samp .action .del{}
+
+#tree1 span samp .action .up:hover,#tree1 span samp .action .down:hover,#tree1 span samp .action .del:hover{background-color:#b2d1ff;}
+
+#tree1 span samp .action .up{background-image:url(/base_js/miniui/themes/icons/upload.gif);}
+#tree1 span samp .action .down{background-image:url(/base_js/miniui/themes/icons/download.gif);}
+#tree1 span samp .action .del{background-image:url(/base_js/miniui/themes/icons/remove.gif);}
+
+#tree1 span samp .action .dis-up{background-image:url(/base_js/miniui/themes/icons/dis-upload.gif);}
+#tree1 span samp .action .dis-down{background-image:url(/base_js/miniui/themes/icons/dis-download.gif);}
+#tree1 span samp .action .dis-del{background-image:url(/base_js/miniui/themes/icons/dis-remove.gif);}
+        
+#tree1 input.b_to_edit{float:left;font-family:微软雅黑;height:16px;}
+
+.hide{display:none;}
+.jq_mini_add{background-color:#e2ecf7;}

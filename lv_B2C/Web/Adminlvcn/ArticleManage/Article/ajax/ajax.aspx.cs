@@ -4,21 +4,21 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Reflection;
 using System.Collections;
+using System.Reflection;
 
-
-namespace lv_B2C.Web.Adminlvcn.ProductManage.Product.ajax
+namespace lv_B2C.Web.Adminlvcn.ArticleManage.Article.ajax
 {
-    public partial class ajax : System.Web.UI.Page
+    public partial class ajax : BLL.Base.BasePageAdmin
     {
-        BLL.ProductExt bllProduct = new BLL.ProductExt();
-        BLL.ProductConnExt bllProductConn = new BLL.ProductConnExt();
+        BLL.ArticleExt bllArticle = new BLL.ArticleExt();
+        BLL.ArticleConnExt bllArticleConn = new BLL.ArticleConnExt();
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            //AjaxPro.Utility.RegisterTypeForAjax(typeof(List));
             string methodName = Request["method"];
-            if (String.IsNullOrEmpty(methodName)) return;
+            if (string.IsNullOrEmpty(methodName)) return;
 
             //invoke method
             Type type = this.GetType();
@@ -29,39 +29,40 @@ namespace lv_B2C.Web.Adminlvcn.ProductManage.Product.ajax
         /// <summary>
         /// 搜索
         /// </summary>
-        public void SearchEmployees()
+        ///[AjaxPro.AjaxMethod()]
+        public void SearchArticleList()
         {
             try
             {
                 //查询条件
                 string key = Request["key"];
-                string strClass = "", strBrand = "", strTitle = "", strWhere = "";
+                string strClass = "", strTitle = "", strWhere = "";
                 if (key != null)
                 {
                     string[] obj = key.Split(new string[] { "[-($)-]" }, StringSplitOptions.None);
                     strClass = obj[0];
-                    strBrand = obj[1];
-                    strTitle = obj[2];
+                    strTitle = obj[1];
 
                     if (strClass != "")
                     {
-                        IList<Model.ProductConn> ilistProductConn = bllProductConn.GetList("ProductClassID in (" + strClass + ")");
-                        for (int i = 0; i < ilistProductConn.Count; i++)
+                        string temp = "";
+                        IList<Model.ArticleConn> ilistArticleConn = bllArticleConn.GetList("ArticleClassID in (" + strClass + ")");
+                        for (int i = 0; i < ilistArticleConn.Count; i++)
                         {
-                            strWhere += " productID=" + ilistProductConn[i].ProductID;
-                            if (i < ilistProductConn.Count - 1)
+                            temp += ilistArticleConn[i].ArticleID;
+                            if (i < ilistArticleConn.Count - 1)
                             {
-                                strWhere += " and ";
+                                temp += ",";
                             }
                         }
-                    }
-                    if (strBrand != "")
-                    {
-                        if (strWhere != "")
+                        if (temp != "")
                         {
-                            strWhere += " and ";
+                            strWhere += " ArticleID in (" + temp + ")";
                         }
-                        strWhere += " ProductBrandID in (" + strBrand + ")";
+                        else {
+                            Response.Write(null);
+                            Response.End();
+                        }
                     }
                     if (strTitle != "")
                     {
@@ -80,7 +81,7 @@ namespace lv_B2C.Web.Adminlvcn.ProductManage.Product.ajax
                 string sortField = Request["sortField"];
                 string sortOrder = Request["sortOrder"];
 
-                Hashtable result = bllProduct.GetHashList(strWhere, sortField + " " + sortOrder, pageIndex, pageSize);
+                Hashtable result = bllArticle.GetHashList(strWhere, sortField + " " + sortOrder, pageIndex, pageSize);
                 string json = PluSoft.Utils.JSON.Encode(result);
                 Response.Write(json);
             }
@@ -93,13 +94,13 @@ namespace lv_B2C.Web.Adminlvcn.ProductManage.Product.ajax
         /// <summary>
         /// 删除
         /// </summary>
-        public void RemoveEmployees()
+        public void RemoveArticles()
         {
             int id = 0;//商品ID
             if (Request["id"] != null)
             {
                 id = Convert.ToInt32(Request["id"]);
-                int rs = bllProduct.Delete(id);
+                int rs = bllArticle.Delete(id);
                 if (rs == 1)
                 {
                     Response.Write(rs.ToString());
@@ -114,34 +115,35 @@ namespace lv_B2C.Web.Adminlvcn.ProductManage.Product.ajax
         {
             if (Request["id"] != null)
             {
-                int rs = bllProduct.DeleteList(Request["id"]);
+                int rs = bllArticle.DeleteList(Request["id"]);
                 if (rs == 1)
                 {
                     Response.Write(rs.ToString());
                 }
             }
         }
-
-        public void SaveEmployees()
+        #region 保存文章
+        public void SaveArticle()
         {
             try
             {
-                String employeesStr = Request["employees"];
+                String employeesStr = Request["articles"];
                 ArrayList arrayList = (ArrayList)PluSoft.Utils.JSON.Decode(employeesStr);
                 Hashtable hasTab = (Hashtable)arrayList[0];
-                Model.Product modelProduct = bllProduct.GetModel(Convert.ToInt32(hasTab["ProductID"]));
+                Model.Article modelProduct = bllArticle.GetModel(Convert.ToInt32(hasTab["ArticleID"]));
                 modelProduct.Title = hasTab["Title"].ToString();
-                modelProduct.ProductMarketPrice = decimal.Parse(hasTab["ProductMarketPrice"].ToString());
-                modelProduct.ProductPrice = decimal.Parse(hasTab["ProductPrice"].ToString());
-                modelProduct.ProductCount = Convert.ToInt32(hasTab["ProductCount"]);
-                modelProduct.IsPostage = Convert.ToInt32(hasTab["IsPostage"]);
-                modelProduct.TimeToMarket = Convert.ToDateTime(hasTab["TimeToMarket"]);
-                bllProduct.Update(modelProduct);
+                modelProduct.Author = hasTab["Author"].ToString();
+                modelProduct.ModifyBy = string.IsNullOrEmpty(bp_curUser)?"administrator":bp_curUser;
+                modelProduct.LastModifyDate = DateTime.Now;
+                modelProduct.Hits = Convert.ToInt32(hasTab["Hits"]);
+                modelProduct.IsShow = Convert.ToInt32(hasTab["IsShow"]);
+                bllArticle.Update(modelProduct);
             }
-            catch 
-            { 
-                    
+            catch
+            {
+
             }
         }
+        #endregion
     }
 }

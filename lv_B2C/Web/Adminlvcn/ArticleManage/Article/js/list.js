@@ -1,12 +1,10 @@
 ﻿mini.parse();
-//var _ajaxPath = "/Adminlvcn/1ref/ajax/product/";
 
 var grid = mini.get("datagrid1");
 var Genders = [{ id: 1, text: '是' }, { id: 0, text: '否'}]; //快速编辑时的数据
 
 grid.load();
 grid.sortBy("ArticleID", "desc");
-//pager(grid);
 
 setCheckRecursive(true);
 function setCheckRecursive(checked) {
@@ -45,12 +43,6 @@ function onGetYesNo(e) {
         return '<img src="/base_js/miniui/themes/icons/no.png">';
     }
 }
-function onGetMoney(e) {
-    return "￥" + e.value + ".00";
-}
-function onGetImages(e) {
-    return "<img src='" + e.value + "' width='50px' height='50px'/>";
-}
 function onGetDate(e) {
     var value = e.value;
     if (value) return mini.formatDate(value, 'yyyy-MM-dd');
@@ -79,28 +71,28 @@ function onRemove(e) {
     if (row.length > 1) {
         var idlist;
         for (var i = 0; i < row.length; i++) {
-            idlist += row[i].ProductID;
+            idlist += row[i].ArticleID;
             if (i < row.length - 1) {
                 idlist += ",";
             }
         }
-        idlist = idlist.replace('NaN', row[0].ProductID);
+        idlist = idlist.replace('NaN', row[0].ArticleID);
         if (idlist != "") {
             confirmDel(idlist, 'RemoveList');
         }
     }
     else if (row.length == 1) {
-        confirmDel(row[0].ProductID, 'RemoveEmployees');
+        confirmDel(row[0].ArticleID, 'RemoveArticles');
     }
     else {
-        mini.alert('请选择商品');
+        mini.alert('请选择文章');
     }
 }
 //删除一行
 function delRow(row_uid) {
     var row = grid.getRowByUID(row_uid);
     if (row) {
-        confirmDel(row.ProductID, 'RemoveEmployees');
+        confirmDel(row.ArticleID, 'RemoveArticles');
     }
 }
 
@@ -113,10 +105,10 @@ function onActionRenderer(e) {
     var uid = record._uid; //行索引
     var rowIndex = e.rowIndex;
 
-    var s = '<a class="Edit_Button" href="javascript:fEditRow(\'' + uid + '\')" target="_blank"><img title="快速编辑商品" src="/base_js/miniui/themes/icons/node.png"></a>'
-            + '<a class="Edit_Button" href="###" target="_blank"><img title="查看商品" src="/base_js/miniui/themes/icons/goto.gif"></a>'
-            + '<a class="Edit_Button" href="' + editRow(uid) + '" target="main"><img title="编辑商品" src="/base_js/miniui/themes/icons/edit.gif"></a>'
-            + '<a class="Delete_Button" href="javascript:delRow(\'' + uid + '\')"><img title="删除商品" src="/base_js/miniui/themes/icons/remove.gif"></a>';
+    var s = '<a class="Edit_Button" href="javascript:fEditRow(\'' + uid + '\')" target="_blank"><img title="快速编辑文章" src="/base_js/miniui/themes/icons/node.png"></a>'
+            + '<a class="Edit_Button" href="javascript:void(0);" target="_blank"><img title="查看文章" src="/base_js/miniui/themes/icons/goto.gif"></a>'
+            + '<a class="Edit_Button" href="' + editRow(uid) + '" target="main"><img title="编辑文章" src="/base_js/miniui/themes/icons/edit.gif"></a>'
+            + '<a class="Delete_Button" href="javascript:delRow(\'' + uid + '\')"><img title="删除文章" src="/base_js/miniui/themes/icons/remove.gif"></a>';
 
     if (grid.isEditingRow(record)) {
         s = '<a class="Update_Button" href="javascript:updateRow(\'' + uid + '\')">保存</a>'
@@ -151,8 +143,8 @@ function updateRow(row_uid) {
     grid.loading("保存中，请稍后......");
     var json = mini.encode([rowData]);
     $.ajax({
-        url: "ajax/ajax.aspx?method=SaveEmployees",
-        data: { employees: json },
+        url: "ajax/ajax.aspx?method=SaveArticle",
+        data: { articles: json },
         success: function (text) {
             grid.reload();
         },
@@ -162,31 +154,10 @@ function updateRow(row_uid) {
     });
 }
 /********点击单元格直接编辑 ENd*********/
-
-////快速保存
-//function updateRow(row_uid) {
-//    var row = grid.getRowByUID(row_uid);
-//    var rowData = grid.getEditRowData(row);
-
-//    grid.loading("保存中，请稍后......");
-//    var json = mini.encode([rowData]);
-//    alert(json);
-//    $.ajax({
-//        url: "../data/dataservice.aspx?method=SaveEmployees",
-//        data: { employees: json },
-//        success: function (text) {
-//            grid.reload();
-//        },
-//        error: function (jqXHR, textStatus, errorThrown) {
-//            alert(jqXHR.responseText);
-//        }
-//    });
-
-//}
 function editRow(row_uid) {
     var row = grid.getRowByUID(row_uid);
     if (row) {
-        return "Modify.aspx?id=" + row.ProductID;
+        return "Modify.aspx?id=" + row.ArticleID;
     }
     return "";
 }
@@ -195,21 +166,21 @@ function editRowList(val) {
     var row = grid.getSelecteds();
     var _href;
     if (row.length == 1) {
-        _href = "Modify.aspx?id=" + row[0].ProductID;
+        _href = "Modify.aspx?id=" + row[0].ArticleID;
     }
     else if (row.length > 1) {
         var idlist;
         for (var i = 0; i < row.length; i++) {
-            idlist += row[i].ProductID;
+            idlist += row[i].ArticleID;
             if (i < row.length - 1) {
                 idlist += ",";
             }
         }
-        idlist = idlist.replace('NaN', row[0].ProductID);
+        idlist = idlist.replace('NaN', row[0].ArticleID);
         _href = "Modify.aspx?ids=" + idlist;
     }
     else {
-        mini.alert('请选择商品');
+        mini.alert('请选择文章');
         return false;
     }
     window.location = _href;
@@ -220,7 +191,7 @@ function cancelRow(row_uid) {
 }
 
 function confirmDel(_id, toMothod) {
-    mini.confirm("确定删除商品？", "确定？",
+    mini.confirm("确定删除文章？", "确定？",
             function (action) {
                 if (action == "ok") {
                     delData(_id, toMothod);

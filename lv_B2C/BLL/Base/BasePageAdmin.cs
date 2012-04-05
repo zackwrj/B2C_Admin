@@ -17,6 +17,9 @@ namespace lv_B2C.BLL.Base
         public readonly BLL.ProductClassExt bllProductClass = new BLL.ProductClassExt();
         public readonly BLL.ProductExt bllProduct = new BLL.ProductExt();
 
+        public readonly BLL.ArticleClassExt bllArticleClass = new BLL.ArticleClassExt();
+        public readonly BLL.ArticleExt bllArticle = new BLL.ArticleExt();
+
         #endregion BLL引用
     }
 }

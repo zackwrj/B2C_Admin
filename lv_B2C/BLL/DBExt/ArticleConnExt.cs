@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace lv_B2C.BLL.DB
+namespace lv_B2C.BLL
 {
     public class ArticleConnExt : ArticleConn
     {

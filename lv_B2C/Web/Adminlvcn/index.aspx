@@ -122,7 +122,7 @@
         <!--左导航 end-->
     </div>
     <div id="iframe_parent" title="center" region="center" bodyStyle="overflow:hidden;">
-        <iframe id="main" onload="iframeLoad()" frameborder="0" name="main" src="OrderManage/Order/List.aspx" style="width:100%;height:100%;" border="0"></iframe>
+        <iframe id="main" onload="iframeLoad()" frameborder="0" name="main" src="ArticleManage/Article/List.aspx" style="width:100%;height:100%;" border="0"></iframe>
     </div>
 </div>
 <script src="1ref/js/js.js" type="text/javascript"></script>
