@@ -6,6 +6,7 @@ ul{margin:0;padding:0;}
 {
     font-size:11px;color:#1B3F91;font-family:微软雅黑;  
     margin-right:5px;
+    cursor:pointer;
 }
 
 .window_ul{margin:0px;padding:0px;width:100%;text-align:center;}

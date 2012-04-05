@@ -2081,6 +2081,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Adminlvcn\LogisticsManage\Freight\" />
+    <Folder Include="Adminlvcn\LogisticsManage\LogisticsCommany\" />
     <Folder Include="Adminlvcn\ProductManage\ProductBrand\css\" />
     <Folder Include="Adminlvcn\ProductManage\ProductKeyWords\" />
     <Folder Include="Adminlvcn\ProductManage\ProductRecycleBin\" />

@@ -1,64 +1,64 @@
-﻿using System; 
+﻿using System;
 using System.Text;
 using System.Data.SqlClient;
-using System.Collections.Generic; 
+using System.Collections.Generic;
 using System.Data;
 using lv_DBUtility;
-namespace lv_B2C.DAL  
+namespace lv_B2C.DAL
 {
-	 	//LogisticsInfo
-		public partial class LogisticsInfo
-	{
-		#region  Method
+    //LogisticsInfo
+    public partial class LogisticsInfo
+    {
+        #region  Method
         private const string _defaultOrder = "LogisticsID desc ";
-          			
-		/// <summary>
+
+        /// <summary>
         /// 得到最大ID
         /// </summary>
         public int GetMaxId()
         {
             return DbHelperSQL.GetMaxID("LogisticsID", "LogisticsInfo");
         }
-     		
-		/// <summary>
-		/// 增加一条数据
-		/// </summary>
-		public int Add(lv_B2C.Model.LogisticsInfo model)
-		{
-			return Merger(model, "LogisticsInfo_ADD");	
-		}		
-		
-		/// <summary>
-		/// 更新一条数据
-		/// </summary>
-		public int Update(lv_B2C.Model.LogisticsInfo model)
-		{
-			 return Merger(model, "LogisticsInfo_Update");
-		}
-		
-		/// <summary>
+
+        /// <summary>
+        /// 增加一条数据
+        /// </summary>
+        public int Add(lv_B2C.Model.LogisticsInfo model)
+        {
+            return Merger(model, "LogisticsInfo_ADD");
+        }
+
+        /// <summary>
+        /// 更新一条数据
+        /// </summary>
+        public int Update(lv_B2C.Model.LogisticsInfo model)
+        {
+            return Merger(model, "LogisticsInfo_Update");
+        }
+
+        /// <summary>
         /// 执行更新或新增的存储过程
         /// </summary>
-		private int Merger(lv_B2C.Model.LogisticsInfo model, string strStoredProcedure)
+        private int Merger(lv_B2C.Model.LogisticsInfo model, string strStoredProcedure)
         {
-        	try
+            try
             {
-	            SqlParameter[] parameters = {
+                SqlParameter[] parameters = {
 					            new SqlParameter("@LogisticsID", model.LogisticsID) ,            
 	            	            new SqlParameter("@LogisticsType", model.LogisticsType) ,            
 	            	            new SqlParameter("@DefaultMoney", model.DefaultMoney) ,            
 	            	            new SqlParameter("@BeyondMoney", model.BeyondMoney) ,            
 	            	            new SqlParameter("@Detail", model.Detail)             
 	              
-	            };			
-	            return lv_DBUtility.DBManager.Instance().ExecuteNonQuery(CommandType.StoredProcedure, strStoredProcedure, parameters);
+	            };
+                return lv_DBUtility.DBManager.Instance().ExecuteNonQuery(CommandType.StoredProcedure, strStoredProcedure, parameters);
             }
             catch
             {
                 return -1;
             }
         }
-        
+
         /// <summary>
         /// 更新单个字段的值
         /// </summary>
@@ -78,8 +78,8 @@ namespace lv_B2C.DAL
                 return -1;
             }
         }
-				
-		/// <summary>
+
+        /// <summary>
         /// 删除一条数据
         /// </summary>
         public int Delete(int LogisticsID)
@@ -93,7 +93,7 @@ namespace lv_B2C.DAL
                 return -1;
             }
         }
-        
+
         /// <summary>
         /// 批量删除数据
         /// </summary>
@@ -108,30 +108,30 @@ namespace lv_B2C.DAL
                 return -1;
             }
         }
-		
-		/// <summary>
+
+        /// <summary>
         /// 得到一个对象实体
         /// </summary>
         public lv_B2C.Model.LogisticsInfo GetModel(int LogisticsID)
         {
-	        try
-	        {
-	            IList<lv_B2C.Model.LogisticsInfo> iListLogisticsInfo = lv_DBUtility.DBManager.Instance().ExecuteReaderList<lv_B2C.Model.LogisticsInfo>(CommandType.StoredProcedure, "LogisticsInfo_GetModel", new SqlParameter("@LogisticsID", LogisticsID));
-	            if (iListLogisticsInfo.Count > 0)
-	            {
-	                return iListLogisticsInfo[0];
-	            }
-	            else
-	            {
-	                return null;
-	            }
-			}            
+            try
+            {
+                IList<lv_B2C.Model.LogisticsInfo> iListLogisticsInfo = lv_DBUtility.DBManager.Instance().ExecuteReaderList<lv_B2C.Model.LogisticsInfo>(CommandType.StoredProcedure, "LogisticsInfo_GetModel", new SqlParameter("@LogisticsID", LogisticsID));
+                if (iListLogisticsInfo.Count > 0)
+                {
+                    return iListLogisticsInfo[0];
+                }
+                else
+                {
+                    return null;
+                }
+            }
             catch
             {
                 return null;
             }
         }
-        
+
         /// <summary>
         /// 获取记录总数
         /// </summary>
@@ -149,10 +149,10 @@ namespace lv_B2C.DAL
                 return -1;
             }
         }
-		
-		#region 获得数据列表
-		
-		/// <summary>
+
+        #region 获得数据列表
+
+        /// <summary>
         /// 获得数据列表
         /// </summary>
         public IList<lv_B2C.Model.LogisticsInfo> GetList()
@@ -185,7 +185,7 @@ namespace lv_B2C.DAL
                 return null;
             }
         }
-        
+
         /// <summary>
         /// 获得数据列表-模糊搜索Title
         /// </summary>
@@ -212,7 +212,7 @@ namespace lv_B2C.DAL
                 return null;
             }
         }
-        
+
         /// <summary>
         /// 获得数据列表-id not in (1,2,3)
         /// </summary>
@@ -262,7 +262,7 @@ namespace lv_B2C.DAL
                 return null;
             }
         }
-        
+
         /// <summary>
         /// 数据分页
         /// </summary>
@@ -278,7 +278,7 @@ namespace lv_B2C.DAL
         {
             return PageMerger(strWhere, fieldOrder, startIndex, endIndex, 0);
         }
-        
+
         private IList<lv_B2C.Model.LogisticsInfo> PageMerger(string strWhere, string fieldOrder, int pageIndex, int pageSize, int pageType)
         {
             try
@@ -297,16 +297,12 @@ namespace lv_B2C.DAL
                 return null;
             }
         }
-		
-		#endregion
-		
-		#endregion Method
-		
-	}
+
+        #endregion
+
+        #endregion Method
+
+    }
 }
 
 
-/*------ 代码生成时出现错误: ------
-f:\已安装\动软\Template\TemplateFile\简单三层模板\DAL.cmt(27,43) : warning CS0162: 正在编译转换: 检测到无法访问的代码
-f:\已安装\动软\Template\TemplateFile\简单三层模板\DAL.cmt(346,5) : warning CS0414: 正在编译转换: 私有字段“Microsoft.VisualStudio.TextTemplating83DB1929C768C75D65FC119BB59F94AD.GeneratedTextTransformation.n”已被赋值，但从未使用过它的值
-*/

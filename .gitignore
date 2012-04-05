@@ -59,21 +59,21 @@ logs/
 
 #folder
 
-/Model/obj/
-/Model/bin/
+/lv_B2C/Model/obj/
+/lv_B2C/Model/bin/
 
-/Common/obj/
-/Common/bin/
+/lv_B2C/Common/obj/
+/lv_B2C/Common/bin/
 
-/BLL/obj/
-/BLL/bin/
+/lv_B2C/BLL/obj/
+/lv_B2C/BLL/bin/
 
-/DAL/obj/
-/DAL/bin/
+/lv_B2C/DAL/obj/
+/lv_B2C/DAL/bin/
 
-/Web/obj/
-/Web/bin/
+/lv_B2C/Web/obj/
+/lv_B2C/Web/bin/
 
-/DBUtility/obj/
-/DBUtility/bin/
+/lv_B2C/DBUtility/obj/
+/lv_B2C/DBUtility/bin/
 

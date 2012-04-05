@@ -11,6 +11,7 @@ namespace lv_B2C.Model
 		{}
 		#region Model
 		private int _logisticsid=0;
+        private string _title = "";
 		private int _logisticstype=0;
 		private decimal _defaultmoney=0.00M;
 		private decimal _beyondmoney=0.00M;
@@ -23,6 +24,14 @@ namespace lv_B2C.Model
 			set{ _logisticsid=value;}
 			get{return _logisticsid;}
 		}
+        /// <summary>
+        /// 标题
+        /// </summary>
+        public string Title
+        {
+            set { _title = value; }
+            get { return _title; }
+        }
 		/// <summary>
 		/// 物流类型（一般为：快递、EMS、平邮）
 		/// </summary>
