@@ -1,0 +1,42 @@
+﻿
+.web{ width:1000px; height:auto}
+.webLeft{ float:left;background-color: white;
+          overflow:scroll; width:500px;height: 632px; }
+.webRight{ float:left; width:500px;height:432px; overflow-y:scroll}
+.webLeft ul{ margin:0px}/***IE有问题***/
+.webLeft ul ul{ margin-left:-20px }/***IE有问题***/
+.webLeft ul li{ list-style-image:url('/Adminlvcn/1ref/controls/UpLoad/Images/dir.png'); cursor:pointer}
+.webLeft ul li.red{ color:Red;list-style-image:url('/Adminlvcn/1ref/controls/UpLoad/Images/pen.png')}
+
+
+
+/*************本地、在线图片布局*************/
+#thumbnails .UploadDiv{ width:192px; float:left}
+#thumbnails .UploadImage{height:200px; width:180px; border:1px solid #b5c5e6 ; margin:5px; cursor:pointer}
+#thumbnails .UploadImagePhoto{height: 185px; width: 161px; position:absolute}
+
+#thumbnails .UploadTop{ border-width:0px}
+#thumbnails .UploadTop span.l{ float:left; }
+#thumbnails .UploadTop span.r{ float:right}
+#thumbnails .Upload{ text-align:center}
+#thumbnails .Upload  img{height: 169px; width: 163px}
+#thumbnails .UploadTitle { text-align:center;}
+#thumbnails .UploadTitle input{ text-align:center}
+
+ul{ list-style:none; float:left}
+ul li{ float:left}
+
+/****************上传后*****************/
+#afterUpload .UploadDiv{ width:120px; float:left}
+#afterUpload .UploadImage{height:120px; width:110px; border:1px solid #b5c5e6 ; margin:5px; cursor:pointer}
+#afterUpload .UploadImagePhoto{height: 120px; width: 110px; position:absolute}
+
+#afterUpload .UploadTop{ border-width:0px}
+#afterUpload .UploadTop span.l{ float:left; }
+#afterUpload .UploadTop span.r{ float:right}
+#afterUpload .Upload{ text-align:center}
+#afterUpload .Upload  img{height: 100px; width: 100px}
+#afterUpload .UploadTitle { text-align:center;}
+#afterUpload .UploadTitle input{ text-align:center}
+#afterUpload .text{ width:90px}
+.UploadImageHover{border:1px solid red }

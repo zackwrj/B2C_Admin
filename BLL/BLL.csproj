@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5129EE79-E20E-4D69-9452-C6F8940B1614}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>lv_B2C.BLL</RootNamespace>
+    <AssemblyName>lv_B2C.BLL</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\BasePageAdmin.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DB\Activity.cs" />
+    <Compile Include="DB\ActivityExt.cs" />
+    <Compile Include="DB\Ad.cs" />
+    <Compile Include="DB\AdExt.cs" />
+    <Compile Include="DB\AdPage.cs" />
+    <Compile Include="DB\AdPageExt.cs" />
+    <Compile Include="DB\AdPosition.cs" />
+    <Compile Include="DB\AdPositionExt.cs" />
+    <Compile Include="DB\Article.cs" />
+    <Compile Include="DB\ArticleClass.cs" />
+    <Compile Include="DB\ArticleClassExt.cs" />
+    <Compile Include="DB\ArticleConn.cs" />
+    <Compile Include="DB\ArticleConnExt.cs" />
+    <Compile Include="DB\ArticleExt.cs" />
+    <Compile Include="DB\Cart.cs" />
+    <Compile Include="DB\CartExt.cs" />
+    <Compile Include="DB\ChannelItem.cs" />
+    <Compile Include="DB\ChannelItemExt.cs" />
+    <Compile Include="DB\Citys.cs" />
+    <Compile Include="DB\CitysExt.cs" />
+    <Compile Include="DB\Comment.cs" />
+    <Compile Include="DB\CommentExt.cs" />
+    <Compile Include="DB\Extend.cs" />
+    <Compile Include="DB\ExtendExt.cs" />
+    <Compile Include="DB\ExtendType.cs" />
+    <Compile Include="DB\ExtendTypeExt.cs" />
+    <Compile Include="DB\Fields.cs" />
+    <Compile Include="DB\FieldsClass.cs" />
+    <Compile Include="DB\Help.cs" />
+    <Compile Include="DB\HelpExt.cs" />
+    <Compile Include="DB\HomePage.cs" />
+    <Compile Include="DB\HomePageExt.cs" />
+    <Compile Include="DB\KeyWords.cs" />
+    <Compile Include="DB\KeyWordsConn.cs" />
+    <Compile Include="DB\KeyWordsConnExt.cs" />
+    <Compile Include="DB\KeyWordsExt.cs" />
+    <Compile Include="DB\LogDetail.cs" />
+    <Compile Include="DB\LogDetailExt.cs" />
+    <Compile Include="DB\LogisticsCompany.cs" />
+    <Compile Include="DB\LogisticsCompanyExt.cs" />
+    <Compile Include="DB\LogisticsInfo.cs" />
+    <Compile Include="DB\LogisticsInfoExt.cs" />
+    <Compile Include="DB\LogisticsSon.cs" />
+    <Compile Include="DB\LogisticsSonExt.cs" />
+    <Compile Include="DB\Msg.cs" />
+    <Compile Include="DB\MsgExt.cs" />
+    <Compile Include="DB\OrderInfo.cs" />
+    <Compile Include="DB\OrderInfoExt.cs" />
+    <Compile Include="DB\OrderLog.cs" />
+    <Compile Include="DB\OrderLogExt.cs" />
+    <Compile Include="DB\OrderProduct.cs" />
+    <Compile Include="DB\OrderProductExt.cs" />
+    <Compile Include="DB\PriceAnnal.cs" />
+    <Compile Include="DB\PriceAnnalExt.cs" />
+    <Compile Include="DB\Product.cs" />
+    <Compile Include="DB\ProductBrand.cs" />
+    <Compile Include="DB\ProductBrandExt.cs" />
+    <Compile Include="DB\ProductClass.cs" />
+    <Compile Include="DB\ProductClassExt.cs" />
+    <Compile Include="DB\ProductConn.cs" />
+    <Compile Include="DB\ProductConnExt.cs" />
+    <Compile Include="DB\ProductExt.cs" />
+    <Compile Include="DB\ProductFieldClass.cs" />
+    <Compile Include="DB\ProductFieldClassExt.cs" />
+    <Compile Include="DB\ProductFields.cs" />
+    <Compile Include="DB\ProductFieldsConn.cs" />
+    <Compile Include="DB\ProductFieldsExt.cs" />
+    <Compile Include="DB\ProductPackage.cs" />
+    <Compile Include="DB\ProductPackageExt.cs" />
+    <Compile Include="DB\ProductPics.cs" />
+    <Compile Include="DB\ProductPicsExt.cs" />
+    <Compile Include="DB\ProductStock.cs" />
+    <Compile Include="DB\ProductStockExt.cs" />
+    <Compile Include="DB\QA.cs" />
+    <Compile Include="DB\QAExt.cs" />
+    <Compile Include="DB\Related.cs" />
+    <Compile Include="DB\RelatedExt.cs" />
+    <Compile Include="DB\ShippingAddress.cs" />
+    <Compile Include="DB\ShippingAddressExt.cs" />
+    <Compile Include="DB\Site.cs" />
+    <Compile Include="DB\SiteExt.cs" />
+    <Compile Include="DB\UserAccount.cs" />
+    <Compile Include="DB\UserAccountExt.cs" />
+    <Compile Include="DB\UserGroup.cs" />
+    <Compile Include="DB\UserGroupExt.cs" />
+    <Compile Include="DB\UserInfo.cs" />
+    <Compile Include="DB\UserInfoExt.cs" />
+    <Compile Include="DB\UserRight.cs" />
+    <Compile Include="DB\UserRightExt.cs" />
+    <Compile Include="DB\UserRoles.cs" />
+    <Compile Include="DB\UserRolesExt.cs" />
+    <Compile Include="DB\WebAlbum.cs" />
+    <Compile Include="DB\WebAlbumExt.cs" />
+    <Compile Include="DB\WebConfig.cs" />
+    <Compile Include="DB\WebConfigExt.cs" />
+    <Compile Include="DB\WebImage.cs" />
+    <Compile Include="DB\WebImageExt.cs" />
+    <Compile Include="Enums\OpenMode.cs" />
+    <Compile Include="DB\FieldsExt.cs" />
+    <Compile Include="DB\FieldsClassExt.cs" />
+    <Compile Include="DBView\OrderView.cs" />
+    <Compile Include="DBView\OrderViewExt.cs" />
+    <Compile Include="Pager\PageExtend.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{E3D8759A-C5EB-402D-9F10-F5C6029A8D1A}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{3D567CD3-DACD-4121-AD81-4F1ACFF2AB6E}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{06B948E6-B3E2-4CE2-BFDC-5988E28ED422}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Cart\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

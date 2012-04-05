@@ -1,0 +1,52 @@
+﻿.webAlbum{ width:1000px; height:auto}
+.webAlbumLeft{ float:left;background-color: white;
+          overflow:scroll; width:500px;height: 632px; }
+.webAlbumRight{ float:left; width:500px;height:432px; overflow-y:scroll}
+.webAlbumLeft ul{ margin:0px}/***IE有问题***/
+.webAlbumLeft ul ul{ margin-left:-20px }/***IE有问题***/
+.webAlbumLeft ul li{ list-style-image:url('/Adminlvcn/1ref/controls/ImageManage/Images/dir.png'); cursor:pointer}
+.webAlbumLeft ul li.red{ color:Red;list-style-image:url('/Adminlvcn/1ref/controls/ImageManage/Images/pen.png')}
+
+
+
+/*************本地、在线图片布局*************/
+.UploadDiv{ width:192px; float:left}
+.UploadImage{height:200px; width:180px; border:1px solid #b5c5e6 ; margin:5px; cursor:pointer}
+.UploadImageHover{border:1px solid red }
+.UploadImagePhoto{height: 185px; width: 161px; position:absolute}
+
+.UploadTop{ border-width:0px}
+.UploadTop span.l{ float:left; }
+.UploadTop span.r{ float:right}
+.Upload{ text-align:center}
+.Upload  img{height: 169px; width: 163px}
+.UploadTitle { text-align:center;}
+.UploadTitle input{ text-align:center}
+
+
+#editManage
+{
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    width: 300px;
+    height: 200px;
+    border:1px solid #b5c5e6 ;
+    background-color: White;
+    visibility: hidden;
+    z-index:9999;
+}
+#editManage ul{ list-style:none}
+#editManage ul li{ float:left}
+.top_btn_bg {
+	background:url(/Adminlvcn/1ref/controls/ImageManage/Images/ht36.png) repeat-x;
+	color:#2C2C2C;
+	cursor:move;
+	margin-top:-22px
+}
+.top_btn_bg img{
+  float:right; cursor:pointer
+}
+#ImageDir{ cursor:pointer}
+ul li{ cursor:pointer}
+ul li.red{ color:Red;}

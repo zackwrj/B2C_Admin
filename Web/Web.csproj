@@ -1,0 +1,2134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{139CE30A-9F1C-4DA7-8802-B426F761CE3A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>lv_B2C.Web</RootNamespace>
+    <AssemblyName>lv_B2C.Web</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=5.1.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\system\桌面\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.Net20">
+      <HintPath>E:\system\桌面\Newtonsoft.Json.Net20.dll</HintPath>
+    </Reference>
+    <Reference Include="PluSoft">
+      <HintPath>E:\system\桌面\PluSoft.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Adminlvcn\1ref\base_ajax\ajax.aspx" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\adapters\jquery.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\CHANGES.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\ckeditor.asp" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\ckeditor.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\ckeditor_basic.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\ckeditor_basic_source.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\ckeditor_source.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\config.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\contents.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\images\spacer.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\INSTALL.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\af.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\ar.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\bg.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\bn.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\bs.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\ca.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\cs.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\cy.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\da.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\de.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\el.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\en-au.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\en-ca.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\en-gb.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\en.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\eo.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\es.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\et.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\eu.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\fa.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\fi.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\fo.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\fr-ca.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\fr.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\gl.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\gu.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\he.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\hi.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\hr.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\hu.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\is.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\it.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\ja.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\km.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\ko.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\lt.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\lv.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\mn.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\ms.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\nb.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\nl.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\no.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\pl.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\pt-br.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\pt.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\ro.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\ru.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\sk.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\sl.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\sr-latn.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\sr.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\sv.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\th.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\tr.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\uk.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\vi.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\zh-cn.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\zh.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\_languages.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\lang\_translationstatus.txt" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\LICENSE.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\a11yhelp\dialogs\a11yhelp.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\a11yhelp\lang\en.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\a11yhelp\lang\he.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\about\dialogs\about.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\about\dialogs\logo_ckeditor.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\autogrow\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\clipboard\dialogs\paste.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\colordialog\dialogs\colordialog.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\dialog\dialogDefinition.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\div\dialogs\div.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\find\dialogs\find.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\flash\dialogs\flash.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\flash\images\placeholder.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\forms\dialogs\button.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\forms\dialogs\checkbox.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\forms\dialogs\form.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\forms\dialogs\hiddenfield.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\forms\dialogs\radio.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\forms\dialogs\select.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\forms\dialogs\textarea.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\forms\dialogs\textfield.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\forms\images\hiddenfield.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\iframedialog\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\image\dialogs\image.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\link\dialogs\anchor.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\link\dialogs\link.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\link\images\anchor.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\liststyle\dialogs\liststyle.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\pagebreak\images\pagebreak.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\pastefromword\filter\default.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\pastetext\dialogs\pastetext.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\scayt\dialogs\options.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\scayt\dialogs\toolbar.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\showblocks\images\block_address.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\showblocks\images\block_blockquote.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\showblocks\images\block_div.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\showblocks\images\block_h1.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\showblocks\images\block_h2.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\showblocks\images\block_h3.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\showblocks\images\block_h4.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\showblocks\images\block_h5.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\showblocks\images\block_h6.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\showblocks\images\block_p.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\showblocks\images\block_pre.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\smiley\dialogs\smiley.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\smiley\images\angel_smile.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\smiley\images\angry_smile.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\smiley\images\broken_heart.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\smiley\images\confused_smile.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\smiley\images\cry_smile.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\smiley\images\devil_smile.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\smiley\images\embaressed_smile.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\smiley\images\envelope.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\smiley\images\heart.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\smiley\images\kiss.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\smiley\images\lightbulb.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\smiley\images\omg_smile.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\smiley\images\regular_smile.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\smiley\images\sad_smile.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\smiley\images\shades_smile.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\smiley\images\teeth_smile.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\smiley\images\thumbs_down.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\smiley\images\thumbs_up.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\smiley\images\tounge_smile.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\smiley\images\whatchutalkingabout_smile.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\smiley\images\wink_smile.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\specialchar\dialogs\specialchar.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\styles\styles\default.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\tableresize\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\tabletools\dialogs\tableCell.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\table\dialogs\table.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\templates\dialogs\templates.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\templates\templates\default.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\templates\templates\images\template1.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\templates\templates\images\template2.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\templates\templates\images\template3.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\uicolor\dialogs\uicolor.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\uicolor\lang\en.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\uicolor\lang\he.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\uicolor\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\uicolor\uicolor.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\uicolor\yui\assets\hue_bg.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\uicolor\yui\assets\hue_thumb.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\uicolor\yui\assets\picker_mask.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\uicolor\yui\assets\picker_thumb.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\uicolor\yui\assets\yui.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\uicolor\yui\yui.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\wsc\dialogs\ciframe.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\wsc\dialogs\tmpFrameset.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\wsc\dialogs\wsc.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\plugins\wsc\dialogs\wsc.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\skins\kama\dialog.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\skins\kama\editor.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\skins\kama\icons.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\skins\kama\icons_rtl.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\skins\kama\images\dialog_sides.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\skins\kama\images\dialog_sides.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\skins\kama\images\dialog_sides_rtl.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\skins\kama\images\mini.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\skins\kama\images\noimage.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\skins\kama\images\sprites.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\skins\kama\images\sprites_ie6.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\skins\kama\images\toolbar_start.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\skins\kama\skin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\skins\kama\templates.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\skins\office2003\dialog.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\skins\office2003\editor.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\skins\office2003\icons.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\skins\office2003\icons_rtl.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\skins\office2003\images\dialog_sides.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\skins\office2003\images\dialog_sides.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\skins\office2003\images\dialog_sides_rtl.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\skins\office2003\images\mini.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\skins\office2003\images\noimage.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\skins\office2003\images\sprites.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\skins\office2003\images\sprites_ie6.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\skins\office2003\skin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\skins\office2003\templates.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\skins\v2\dialog.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\skins\v2\editor.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\skins\v2\icons.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\skins\v2\icons_rtl.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\skins\v2\images\dialog_sides.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\skins\v2\images\dialog_sides.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\skins\v2\images\dialog_sides_rtl.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\skins\v2\images\mini.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\skins\v2\images\noimage.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\skins\v2\images\sprites.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\skins\v2\images\sprites_ie6.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\skins\v2\images\toolbar_start.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\skins\v2\skin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\skins\v2\templates.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\themes\default\theme.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_samples\ajax.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_samples\api.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_samples\api_dialog.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_samples\api_dialog\my_dialog.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_samples\asp\advanced.asp" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_samples\asp\events.asp" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_samples\asp\index.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_samples\asp\replace.asp" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_samples\asp\replaceall.asp" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_samples\asp\sample_posteddata.asp" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_samples\asp\standalone.asp" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_samples\assets\output_for_flash.swf" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_samples\assets\output_xhtml.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_samples\assets\swfobject.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_samples\autogrow.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_samples\divreplace.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_samples\enterkey.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_samples\fullpage.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_samples\index.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_samples\jqueryadapter.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_samples\output_for_flash.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_samples\output_html.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_samples\output_xhtml.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_samples\replacebyclass.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_samples\replacebycode.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_samples\sample.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_samples\sample.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_samples\sharedspaces.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_samples\skins.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_samples\ui_color.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_samples\ui_languages.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\adapters\jquery.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\ajax.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\ckeditor.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\ckeditor_base.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\ckeditor_basic.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\command.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\commanddefinition.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\config.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\dataprocessor.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\dom.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\dom\comment.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\dom\document.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\dom\documentfragment.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\dom\domobject.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\dom\element.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\dom\elementpath.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\dom\event.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\dom\node.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\dom\nodelist.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\dom\range.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\dom\rangelist.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\dom\text.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\dom\walker.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\dom\window.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\dtd.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\editor.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\editor_basic.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\env.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\event.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\eventInfo.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\focusmanager.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\htmlparser.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\htmlparser\basicwriter.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\htmlparser\cdata.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\htmlparser\comment.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\htmlparser\element.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\htmlparser\filter.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\htmlparser\fragment.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\htmlparser\text.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\imagecacher.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\lang.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\loader.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\plugindefinition.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\plugins.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\resourcemanager.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\scriptloader.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\skins.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\themes.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\tools.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\ui.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\xml.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\core\_bootstrap.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\af.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\ar.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\bg.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\bn.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\bs.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\ca.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\cs.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\cy.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\da.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\de.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\el.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\en-au.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\en-ca.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\en-gb.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\en.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\eo.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\es.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\et.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\eu.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\fa.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\fi.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\fo.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\fr-ca.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\fr.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\gl.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\gu.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\he.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\hi.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\hr.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\hu.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\is.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\it.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\ja.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\km.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\ko.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\lt.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\lv.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\mn.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\ms.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\nb.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\nl.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\no.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\pl.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\pt-br.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\pt.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\ro.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\ru.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\sk.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\sl.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\sr-latn.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\sr.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\sv.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\th.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\tr.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\uk.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\vi.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\zh-cn.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\zh.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\_languages.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\lang\_translationstatus.txt" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\a11yhelp\dialogs\a11yhelp.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\a11yhelp\lang\en.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\a11yhelp\lang\he.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\a11yhelp\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\about\dialogs\about.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\about\dialogs\logo_ckeditor.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\about\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\autogrow\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\basicstyles\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\bidi\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\blockquote\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\button\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\clipboard\dialogs\paste.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\clipboard\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\colorbutton\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\colordialog\dialogs\colordialog.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\colordialog\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\contextmenu\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\dialogadvtab\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\dialogui\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\dialog\dialogDefinition.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\dialog\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\div\dialogs\div.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\div\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\domiterator\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\editingblock\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\elementspath\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\enterkey\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\entities\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\fakeobjects\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\filebrowser\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\find\dialogs\find.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\find\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\flash\dialogs\flash.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\flash\images\placeholder.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\flash\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\floatpanel\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\font\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\format\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\forms\dialogs\button.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\forms\dialogs\checkbox.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\forms\dialogs\form.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\forms\dialogs\hiddenfield.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\forms\dialogs\radio.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\forms\dialogs\select.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\forms\dialogs\textarea.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\forms\dialogs\textfield.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\forms\images\hiddenfield.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\forms\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\horizontalrule\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\htmldataprocessor\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\htmlwriter\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\iframedialog\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\image\dialogs\image.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\image\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\indent\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\justify\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\keystrokes\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\link\dialogs\anchor.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\link\dialogs\link.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\link\images\anchor.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\link\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\listblock\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\liststyle\dialogs\liststyle.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\liststyle\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\list\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\maximize\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\menubutton\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\menu\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\newpage\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\pagebreak\images\pagebreak.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\pagebreak\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\panelbutton\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\panel\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\pastefromword\filter\default.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\pastefromword\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\pastetext\dialogs\pastetext.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\pastetext\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\popup\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\preview\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\print\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\removeformat\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\resize\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\richcombo\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\save\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\scayt\dialogs\options.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\scayt\dialogs\toolbar.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\scayt\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\selection\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\showblocks\images\block_address.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\showblocks\images\block_blockquote.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\showblocks\images\block_div.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\showblocks\images\block_h1.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\showblocks\images\block_h2.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\showblocks\images\block_h3.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\showblocks\images\block_h4.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\showblocks\images\block_h5.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\showblocks\images\block_h6.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\showblocks\images\block_p.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\showblocks\images\block_pre.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\showblocks\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\showborders\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\smiley\dialogs\smiley.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\smiley\images\angel_smile.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\smiley\images\angry_smile.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\smiley\images\broken_heart.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\smiley\images\confused_smile.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\smiley\images\cry_smile.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\smiley\images\devil_smile.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\smiley\images\embaressed_smile.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\smiley\images\envelope.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\smiley\images\heart.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\smiley\images\kiss.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\smiley\images\lightbulb.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\smiley\images\omg_smile.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\smiley\images\regular_smile.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\smiley\images\sad_smile.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\smiley\images\shades_smile.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\smiley\images\teeth_smile.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\smiley\images\thumbs_down.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\smiley\images\thumbs_up.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\smiley\images\tounge_smile.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\smiley\images\whatchutalkingabout_smile.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\smiley\images\wink_smile.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\smiley\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\sourcearea\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\specialchar\dialogs\specialchar.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\specialchar\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\stylescombo\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\styles\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\styles\styles\default.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\tableresize\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\tabletools\dialogs\tableCell.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\tabletools\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\table\dialogs\table.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\table\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\tab\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\templates\dialogs\templates.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\templates\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\templates\templates\default.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\templates\templates\images\template1.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\templates\templates\images\template2.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\templates\templates\images\template3.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\toolbar\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\uicolor\dialogs\uicolor.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\uicolor\lang\en.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\uicolor\lang\he.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\uicolor\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\uicolor\uicolor.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\uicolor\yui\assets\hue_bg.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\uicolor\yui\assets\hue_thumb.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\uicolor\yui\assets\picker_mask.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\uicolor\yui\assets\picker_thumb.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\uicolor\yui\assets\yui.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\uicolor\yui\yui.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\undo\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\wsc\dialogs\ciframe.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\wsc\dialogs\tmpFrameset.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\wsc\dialogs\wsc.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\wsc\dialogs\wsc.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\wsc\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\plugins\wysiwygarea\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\kama\dialog.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\kama\editor.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\kama\elementspath.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\kama\icons.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\kama\icons.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\kama\icons_rtl.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\kama\images\dialog_sides.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\kama\images\dialog_sides.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\kama\images\dialog_sides_rtl.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\kama\images\mini.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\kama\images\noimage.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\kama\images\sprites.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\kama\images\sprites_ie6.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\kama\images\toolbar_start.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\kama\mainui.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\kama\menu.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\kama\panel.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\kama\presets.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\kama\reset.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\kama\richcombo.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\kama\skin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\kama\templates.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\kama\toolbar.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\office2003\dialog.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\office2003\editor.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\office2003\elementspath.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\office2003\icons.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\office2003\icons.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\office2003\icons_rtl.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\office2003\images\dialog_sides.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\office2003\images\dialog_sides.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\office2003\images\dialog_sides_rtl.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\office2003\images\mini.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\office2003\images\noimage.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\office2003\images\sprites.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\office2003\images\sprites_ie6.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\office2003\mainui.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\office2003\menu.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\office2003\panel.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\office2003\presets.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\office2003\reset.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\office2003\richcombo.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\office2003\skin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\office2003\templates.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\office2003\toolbar.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\v2\dialog.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\v2\editor.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\v2\elementspath.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\v2\icons.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\v2\icons.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\v2\icons_rtl.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\v2\images\dialog_sides.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\v2\images\dialog_sides.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\v2\images\dialog_sides_rtl.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\v2\images\mini.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\v2\images\noimage.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\v2\images\sprites.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\v2\images\sprites_ie6.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\v2\images\toolbar_start.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\v2\mainui.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\v2\menu.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\v2\panel.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\v2\presets.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\v2\reset.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\v2\richcombo.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\v2\skin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\v2\templates.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\skins\v2\toolbar.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckeditor\_source\themes\default\theme.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\bin\Debug\CKFinder.dll" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\bin\Debug\CKFinder.pdb" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\bin\Release\CKFinder.dll" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\changelog.txt" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\ckfinder.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\ckfinder.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\ckfinder_v1.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\config.ascx" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\config.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\core\connector\aspx\connector.aspx" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\core\connector\aspx\lang\cs.xml" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\core\connector\aspx\lang\da.xml" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\core\connector\aspx\lang\de.xml" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\core\connector\aspx\lang\el.xml" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\core\connector\aspx\lang\en.xml" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\core\connector\aspx\lang\es-mx.xml" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\core\connector\aspx\lang\es.xml" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\core\connector\aspx\lang\fr.xml" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\core\connector\aspx\lang\he.xml" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\core\connector\aspx\lang\hu.xml" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\core\connector\aspx\lang\it.xml" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\core\connector\aspx\lang\ja.xml" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\core\connector\aspx\lang\lv.xml" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\core\connector\aspx\lang\nb.xml" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\core\connector\aspx\lang\nl.xml" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\core\connector\aspx\lang\nn.xml" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\core\connector\aspx\lang\no.xml" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\core\connector\aspx\lang\pl.xml" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\core\connector\aspx\lang\pt-br.xml" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\core\connector\aspx\lang\ru.xml" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\core\connector\aspx\lang\sk.xml" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\core\connector\aspx\lang\sl.xml" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\core\connector\aspx\lang\sv.xml" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\core\connector\aspx\lang\zh-cn.xml" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\core\connector\aspx\lang\zh-tw.xml" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\en\files\001.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\en\files\002.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\en\files\003.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\en\files\004.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\en\files\005.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\en\files\006.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\en\files\007.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\en\files\008.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\en\files\009.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\en\files\010.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\en\files\011.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\en\files\012.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\en\files\013.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\en\files\header.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\en\files\images\001.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\en\files\images\002.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\en\files\images\003.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\en\files\images\004.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\en\files\images\005.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\en\files\images\006.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\en\files\images\007.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\en\files\images\008.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\en\files\images\009.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\en\files\images\010.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\en\files\images\011.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\en\files\images\012.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\en\files\images\013.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\en\files\images\014.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\en\files\images\015.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\en\files\images\016.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\en\files\images\017.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\en\files\images\018.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\en\files\images\019.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\en\files\images\020.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\en\files\license.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\en\files\other\help.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\en\files\other\help.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\en\files\suggestions.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\en\files\toc.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\en\index.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es-mx\files\001.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es-mx\files\002.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es-mx\files\003.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es-mx\files\004.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es-mx\files\005.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es-mx\files\006.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es-mx\files\007.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es-mx\files\008.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es-mx\files\009.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es-mx\files\010.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es-mx\files\011.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es-mx\files\012.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es-mx\files\013.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es-mx\files\header.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es-mx\files\images\001.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es-mx\files\images\002.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es-mx\files\images\003.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es-mx\files\images\004.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es-mx\files\images\005.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es-mx\files\images\006.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es-mx\files\images\007.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es-mx\files\images\008.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es-mx\files\images\009.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es-mx\files\images\010.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es-mx\files\images\011.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es-mx\files\images\012.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es-mx\files\images\013.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es-mx\files\images\014.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es-mx\files\images\015.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es-mx\files\images\016.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es-mx\files\images\017.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es-mx\files\images\018.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es-mx\files\images\019.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es-mx\files\images\020.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es-mx\files\license.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es-mx\files\other\help.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es-mx\files\other\help.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es-mx\files\suggestions.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es-mx\files\toc.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es-mx\index.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es\files\001.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es\files\002.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es\files\003.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es\files\004.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es\files\005.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es\files\006.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es\files\007.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es\files\008.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es\files\009.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es\files\010.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es\files\011.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es\files\012.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es\files\013.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es\files\header.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es\files\images\001.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es\files\images\002.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es\files\images\003.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es\files\images\004.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es\files\images\005.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es\files\images\006.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es\files\images\007.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es\files\images\008.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es\files\images\009.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es\files\images\010.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es\files\images\011.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es\files\images\012.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es\files\images\013.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es\files\images\014.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es\files\images\015.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es\files\images\016.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es\files\images\017.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es\files\images\018.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es\files\images\019.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es\files\images\020.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es\files\license.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es\files\other\help.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es\files\other\help.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es\files\suggestions.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es\files\toc.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\es\index.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\pl\files\001.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\pl\files\002.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\pl\files\003.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\pl\files\004.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\pl\files\005.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\pl\files\006.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\pl\files\007.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\pl\files\008.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\pl\files\009.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\pl\files\010.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\pl\files\011.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\pl\files\012.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\pl\files\013.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\pl\files\header.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\pl\files\images\001.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\pl\files\images\002.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\pl\files\images\003.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\pl\files\images\004.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\pl\files\images\005.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\pl\files\images\006.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\pl\files\images\007.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\pl\files\images\008.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\pl\files\images\009.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\pl\files\images\010.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\pl\files\images\011.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\pl\files\images\012.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\pl\files\images\013.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\pl\files\images\014.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\pl\files\images\015.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\pl\files\images\016.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\pl\files\images\017.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\pl\files\images\018.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\pl\files\images\019.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\pl\files\images\020.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\pl\files\license.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\pl\files\other\help.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\pl\files\other\help.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\pl\files\suggestions.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\pl\files\toc.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\help\pl\index.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\install.txt" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\lang\cs.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\lang\da.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\lang\de.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\lang\el.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\lang\en.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\lang\es-mx.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\lang\es.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\lang\fr.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\lang\he.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\lang\hu.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\lang\it.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\lang\ja.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\lang\lv.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\lang\nb.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\lang\nl.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\lang\nn.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\lang\no.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\lang\pl.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\lang\pt-br.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\lang\ru.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\lang\sk.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\lang\sl.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\lang\sv.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\lang\zh-cn.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\lang\zh-tw.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\lang\_translationstatus.txt" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\license.txt" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\plugins\dummy\lang\en.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\plugins\dummy\lang\pl.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\plugins\dummy\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\plugins\fileeditor\bin\Debug\CKFinder_FileEditor.dll" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\plugins\fileeditor\bin\Debug\CKFinder_FileEditor.pdb" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\plugins\fileeditor\bin\Release\CKFinder_FileEditor.dll" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\plugins\fileeditor\codemirror\css\csscolors.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\plugins\fileeditor\codemirror\css\docs.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\plugins\fileeditor\codemirror\css\jscolors.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\plugins\fileeditor\codemirror\css\people.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\plugins\fileeditor\codemirror\css\sparqlcolors.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\plugins\fileeditor\codemirror\css\xmlcolors.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\plugins\fileeditor\codemirror\js\codemirror.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\plugins\fileeditor\codemirror\js\editor.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\plugins\fileeditor\codemirror\js\highlight.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\plugins\fileeditor\codemirror\js\mirrorframe.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\plugins\fileeditor\codemirror\js\parsecss.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\plugins\fileeditor\codemirror\js\parsedummy.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\plugins\fileeditor\codemirror\js\parsehtmlmixed.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\plugins\fileeditor\codemirror\js\parsejavascript.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\plugins\fileeditor\codemirror\js\parsesparql.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\plugins\fileeditor\codemirror\js\parsexml.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\plugins\fileeditor\codemirror\js\select.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\plugins\fileeditor\codemirror\js\stringstream.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\plugins\fileeditor\codemirror\js\tokenize.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\plugins\fileeditor\codemirror\js\tokenizejavascript.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\plugins\fileeditor\codemirror\js\undo.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\plugins\fileeditor\codemirror\js\util.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\plugins\fileeditor\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\plugins\imageresize\bin\Debug\CKFinder_ImageResize.dll" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\plugins\imageresize\bin\Debug\CKFinder_ImageResize.pdb" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\plugins\imageresize\bin\Release\CKFinder_ImageResize.dll" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\plugins\imageresize\images\mini.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\plugins\imageresize\plugin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\app.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\host.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\icons.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\ckffolder.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\ckffolderopened.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\ckfminus.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\ckfnothumb.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\ckfplus.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\16\ai.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\16\avi.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\16\bmp.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\16\cs.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\16\default.icon.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\16\dll.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\16\doc.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\16\docx.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\16\exe.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\16\fla.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\16\gif.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\16\jpg.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\16\js.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\16\mdb.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\16\mp3.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\16\ogg.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\16\pdf.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\16\ppt.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\16\pptx.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\16\rdp.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\16\swf.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\16\swt.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\16\txt.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\16\vsd.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\16\xls.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\16\xlsx.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\16\xml.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\16\zip.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\32\ai.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\32\avi.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\32\bmp.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\32\cs.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\32\default.icon.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\32\dll.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\32\doc.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\32\docx.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\32\exe.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\32\fla.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\32\gif.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\32\jpg.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\32\js.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\32\mdb.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\32\mp3.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\32\ogg.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\32\ogg.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\32\pdf.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\32\ppt.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\32\pptx.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\32\rdp.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\32\swf.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\32\swt.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\32\txt.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\32\vsd.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\32\xls.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\32\xlsx.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\32\xml.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\icons\32\zip.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\loaders\16x16.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\loaders\32x32.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\spacer.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\sprites.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\sprites_ie6.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\toolbar\add.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\toolbar\clear_basket.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\toolbar\delete.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\toolbar\download.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\toolbar\help.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\toolbar\refresh.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\toolbar\settings.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\images\toolbar\view.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\richcombo.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\skin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\kama\uipanel.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\app.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\host.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\icons.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\ckffolder.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\ckffolderopened.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\ckfminus.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\ckfnothumb.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\ckfplus.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\dialog_sides.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\dialog_sides.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\dialog_sides_rtl.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\16\ai.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\16\avi.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\16\bmp.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\16\cs.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\16\default.icon.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\16\dll.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\16\doc.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\16\docx.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\16\exe.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\16\fla.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\16\gif.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\16\jpg.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\16\js.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\16\mdb.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\16\mp3.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\16\pdf.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\16\ppt.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\16\pptx.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\16\rdp.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\16\swf.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\16\swt.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\16\txt.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\16\vsd.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\16\xls.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\16\xlsx.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\16\xml.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\16\zip.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\32\ai.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\32\avi.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\32\bmp.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\32\cs.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\32\default.icon.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\32\dll.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\32\doc.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\32\docx.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\32\exe.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\32\fla.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\32\gif.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\32\jpg.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\32\js.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\32\mdb.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\32\mp3.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\32\pdf.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\32\ppt.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\32\pptx.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\32\rdp.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\32\swf.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\32\swt.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\32\txt.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\32\vsd.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\32\xls.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\32\xlsx.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\32\xml.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\icons\32\zip.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\loaders\16x16.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\loaders\32x32.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\spacer.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\sprites.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\sprites_ie6.png" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\toolbar\add.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\toolbar\clear_basket.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\toolbar\delete.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\toolbar\download.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\toolbar\help.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\toolbar\refresh.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\toolbar\settings.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\toolbar\view.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\images\toolbar_start.gif" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\richcombo.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\skin.js" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\skins\v1\uipanel.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\_samples\aspx\ckeditor.aspx" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\_samples\aspx\standalone.aspx" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\_samples\ckeditor.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\_samples\fckeditor.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\_samples\index.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\_samples\popup.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\_samples\popups.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\_samples\public_api.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\_samples\sample.css" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\_samples\standalone.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\_samples\standalone_v1.html" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\_source\CKFinder.ico" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\_source\CKFinder.Net.csproj" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\_source\CKFinder.Net.sln" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\_source\_Plugins\FileEditor\CKFinder.ico" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\_source\_Plugins\FileEditor\FileEditor.csproj" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\_source\_Plugins\FileEditor\FileEditor.sln" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\_source\_Plugins\ImageResize\CKFinder.ico" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\_source\_Plugins\ImageResize\ImageResize.csproj" />
+    <Content Include="Adminlvcn\1ref\controls\ckfinder\_source\_Plugins\ImageResize\ImageResize.sln" />
+    <Content Include="Adminlvcn\1ref\controls\Editor.ascx" />
+    <Content Include="Adminlvcn\1ref\controls\ImageManage\CSS\ContextMenu.css" />
+    <Content Include="Adminlvcn\1ref\controls\ImageManage\CSS\WebAlbum.css" />
+    <Content Include="Adminlvcn\1ref\controls\ImageManage\Images\check.png" />
+    <Content Include="Adminlvcn\1ref\controls\ImageManage\Images\close.png" />
+    <Content Include="Adminlvcn\1ref\controls\ImageManage\Images\cut.png" />
+    <Content Include="Adminlvcn\1ref\controls\ImageManage\Images\dir.png" />
+    <Content Include="Adminlvcn\1ref\controls\ImageManage\Images\door.png" />
+    <Content Include="Adminlvcn\1ref\controls\ImageManage\Images\ht36.png" />
+    <Content Include="Adminlvcn\1ref\controls\ImageManage\Images\page_white_copy.png" />
+    <Content Include="Adminlvcn\1ref\controls\ImageManage\Images\page_white_delete.png" />
+    <Content Include="Adminlvcn\1ref\controls\ImageManage\Images\page_white_edit.png" />
+    <Content Include="Adminlvcn\1ref\controls\ImageManage\Images\page_white_paste.png" />
+    <Content Include="Adminlvcn\1ref\controls\ImageManage\Images\pen.png" />
+    <Content Include="Adminlvcn\1ref\controls\ImageManage\Images\upload-button.png" />
+    <Content Include="Adminlvcn\1ref\controls\ImageManage\Images\XPButtonNoText_160x22.png" />
+    <Content Include="Adminlvcn\1ref\controls\ImageManage\JS\WebAlbumManage.js" />
+    <Content Include="Adminlvcn\1ref\controls\ImageManage\Photh_Manage.ascx" />
+    <Content Include="Adminlvcn\1ref\controls\Left.ascx" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261024215597716060778.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261024369474727880283.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261026415563346038610.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261027330482430517356.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261028112078181458617.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261029261662622671307.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261032436242414346031.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261034552211824828151.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261035291264514067230.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261035295005273520887.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261036272564577500636.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261036275720366843611.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261036278923686012260.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261036282326816172720.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261037291305765235431.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261037301523884027107.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261037574192070710517.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261042349014242261466.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261043060621012776824.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261047271522868026682.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261048036293851055156.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261048527090354062732.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261050202527277272733.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261050510900727530632.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261053485360778110121.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261053489071436672678.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261053492161843541230.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261053495701511003886.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261055070032065705716.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261056086985474002602.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261057345158233808234.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261058198457027105611.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261058594665140026740.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261059446558130684001.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261059523843337456070.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261059527443006020537.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261059530593502887188.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261059534178808056232.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261100132045332201568.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261100135734342571611.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261100138864858448262.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261149589255250542685.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261149593278084114827.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261149597135446201545.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261150001474862864260.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261150005080257042314.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261150008506202314063.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261150012681003884688.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261150016648455862316.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261150020541180434448.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261150024216586512582.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261150027905506873635.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261150031164188436708.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261150034616661213843.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261150039004286086568.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261150043135362365285.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261150046928187837427.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261150051545054326627.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261150055362426404356.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261150469433026151524.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261150472915688027660.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261152094504167617584.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261152098273177077627.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261152101645750855762.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261152386477728454271.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261152387305675663348.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261152387860817681417.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261152388498312183180.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261152389222544111257.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261152389742058513730.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261152390415281531808.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261305555374150504341.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261307164493750843106.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261308183847270516060.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261309111386141426876.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261309267487350177107.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261310328900061432550.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261311197710786031071.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261314402184605472124.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261315347953837632142.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261316124571566074507.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261316366213617551666.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261317032711033425541.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261318000753362407721.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261318503667467747071.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261321054994542784106.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261322148563754451488.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261323373152748000864.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261323374395475420514.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261323375351673456267.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261323375990277858740.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261323416483666021113.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261323417176808048272.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261323417914745258340.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261323418573250661022.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261323419291106870180.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261323419856886181663.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261323420594743300731.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261323421341688520007.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261429396788673584566.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261429397770244005623.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261429398537101215880.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261429399053881425473.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261429399586123443542.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261429400265527845124.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261429400953474165282.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261429401617616173351.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261430338215663456272.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261430341023113315257.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261430341666245333326.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\201203261430342236740735808.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261024215597716060778.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261024369474727880283.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261026415563346038610.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261027330482430517356.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261028112078181458617.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261029261662622671307.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261032436242414346031.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261034552211824828151.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261035291264514067230.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261035295005273520887.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261036272564577500636.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261036275720366843611.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261036278923686012260.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261036282326816172720.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261037291305765235431.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261037301523884027107.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261037574192070710517.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261042349014242261466.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261043060621012776824.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261047271522868026682.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261048036293851055156.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261048527090354062732.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261050202527277272733.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261050510900727530632.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261053485360778110121.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261053489071436672678.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261053492161843541230.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261053495701511003886.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261055070032065705716.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261056086985474002602.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261057345158233808234.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261058198457027105611.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261058594665140026740.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261059446558130684001.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261059523843337456070.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261059527443006020537.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261059530593502887188.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261059534178808056232.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261100132045332201568.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261100135734342571611.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261100138864858448262.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261149589255250542685.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261149593278084114827.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261149597135446201545.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261150001474862864260.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261150005080257042314.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261150008506202314063.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261150012681003884688.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261150016648455862316.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261150020541180434448.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261150024216586512582.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261150027905506873635.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261150031164188436708.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261150034616661213843.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261150039004286086568.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261150043135362365285.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261150046928187837427.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261150051545054326627.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261150055362426404356.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261150469433026151524.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261150472915688027660.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261152094504167617584.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261152098273177077627.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261152101645750855762.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261152386477728454271.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261152387305675663348.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261152387860817681417.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261152388498312183180.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261152389222544111257.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261152389742058513730.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261152390415281531808.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261305555374150504341.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261307164493750843106.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261308183847270516060.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261309111386141426876.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261309267487350177107.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261310328900061432550.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261311197710786031071.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261314402184605472124.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261315347953837632142.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261316124571566074507.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261316366213617551666.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261317032711033425541.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261318000753362407721.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261318503667467747071.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261321054994542784106.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261322148563754451488.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261323373152748000864.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261323374395475420514.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261323375351673456267.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261323375990277858740.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261323416483666021113.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261323417176808048272.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261323417914745258340.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261323418573250661022.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261323419291106870180.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261323419856886181663.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261323420594743300731.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261323421341688520007.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261429396788673584566.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261429397770244005623.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261429398537101215880.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261429399053881425473.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261429399586123443542.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261429400265527845124.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261429400953474165282.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261429401617616173351.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261430338215663456272.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261430341023113315257.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261430341666245333326.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Content\Upload\Images\before_201203261430342236740735808.jpg" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\css\ContextMenu.css" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\css\WebUpLoad.css" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Images\check.png" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Images\close.png" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Images\cut.png" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Images\dir.png" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Images\door.png" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Images\page_white_copy.png" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Images\page_white_delete.png" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Images\page_white_edit.png" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Images\page_white_paste.png" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Images\pen.png" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Images\upload-button.png" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\Images\XPButtonNoText_160x22.png" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\js\handlers.js" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\js\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\js\jquery.contextMenu.js" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\js\photo.js" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\js\WebUpLoad.js" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\UpLoad\swfupload\handlers.js" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\UpLoad\swfupload\handlers_1.js" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\UpLoad\swfupload\jquery-1.4.1.js" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\UpLoad\swfupload\swfupload.js" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\UpLoad\swfupload\swfupload.swf" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\UpLoad\swfupload\swfuploadbutton.swf" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\UpLoad\UpLoad.ascx" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\UpLoad\UpLoadFile.aspx" />
+    <Content Include="Adminlvcn\1ref\css\global.css" />
+    <Content Include="Adminlvcn\1ref\css\css.css" />
+    <Content Include="Adminlvcn\1ref\css\miniui\demo.css" />
+    <Content Include="Adminlvcn\1ref\css\miniui\icons.css" />
+    <Content Include="Adminlvcn\1ref\css\miniui\miniui.css" />
+    <Content Include="Adminlvcn\1ref\css\pages\ProductClass.css" />
+    <Content Include="Adminlvcn\1ref\icon\add.gif" />
+    <Content Include="Adminlvcn\1ref\icon\addfolder.gif" />
+    <Content Include="Adminlvcn\1ref\icon\addnew.gif" />
+    <Content Include="Adminlvcn\1ref\icon\cancel.gif" />
+    <Content Include="Adminlvcn\1ref\icon\cut.png" />
+    <Content Include="Adminlvcn\1ref\icon\date.gif" />
+    <Content Include="Adminlvcn\1ref\icon\downgrade.gif" />
+    <Content Include="Adminlvcn\1ref\icon\download.gif" />
+    <Content Include="Adminlvcn\1ref\icon\edit.gif" />
+    <Content Include="Adminlvcn\1ref\icon\filter.gif" />
+    <Content Include="Adminlvcn\1ref\icon\find.png" />
+    <Content Include="Adminlvcn\1ref\icon\folder-open.gif" />
+    <Content Include="Adminlvcn\1ref\icon\folder.gif" />
+    <Content Include="Adminlvcn\1ref\icon\goto.gif" />
+    <Content Include="Adminlvcn\1ref\icon\help.png" />
+    <Content Include="Adminlvcn\1ref\icon\lock.png" />
+    <Content Include="Adminlvcn\1ref\icon\new.gif" />
+    <Content Include="Adminlvcn\1ref\icon\no.png" />
+    <Content Include="Adminlvcn\1ref\icon\nocolornoimage.gif" />
+    <Content Include="Adminlvcn\1ref\icon\node.png" />
+    <Content Include="Adminlvcn\1ref\icon\noimage.gif" />
+    <Content Include="Adminlvcn\1ref\icon\nowait.gif" />
+    <Content Include="Adminlvcn\1ref\icon\ok.png" />
+    <Content Include="Adminlvcn\1ref\icon\open.gif" />
+    <Content Include="Adminlvcn\1ref\icon\print.gif" />
+    <Content Include="Adminlvcn\1ref\icon\redo.gif" />
+    <Content Include="Adminlvcn\1ref\icon\reload.png" />
+    <Content Include="Adminlvcn\1ref\icon\remove.gif" />
+    <Content Include="Adminlvcn\1ref\icon\save.gif" />
+    <Content Include="Adminlvcn\1ref\icon\search.gif" />
+    <Content Include="Adminlvcn\1ref\icon\sort.gif" />
+    <Content Include="Adminlvcn\1ref\icon\split.gif" />
+    <Content Include="Adminlvcn\1ref\icon\tip.png" />
+    <Content Include="Adminlvcn\1ref\icon\undo.gif" />
+    <Content Include="Adminlvcn\1ref\icon\upgrade.gif" />
+    <Content Include="Adminlvcn\1ref\icon\upload.gif" />
+    <Content Include="Adminlvcn\1ref\icon\user.png" />
+    <Content Include="Adminlvcn\1ref\icon\wait.gif" />
+    <Content Include="Adminlvcn\1ref\icon\warning.png" />
+    <Content Include="Adminlvcn\1ref\icon\zoomin.gif" />
+    <Content Include="Adminlvcn\1ref\icon\zoomout.gif" />
+    <Content Include="Adminlvcn\1ref\images\header.gif" />
+    <Content Include="Adminlvcn\1ref\images\miniui\arrow.png" />
+    <Content Include="Adminlvcn\1ref\images\miniui\arrows.gif" />
+    <Content Include="Adminlvcn\1ref\images\miniui\button.png" />
+    <Content Include="Adminlvcn\1ref\images\miniui\collapse.gif" />
+    <Content Include="Adminlvcn\1ref\images\miniui\collapseLine.gif" />
+    <Content Include="Adminlvcn\1ref\images\miniui\expand.gif" />
+    <Content Include="Adminlvcn\1ref\images\miniui\expandLine.gif" />
+    <Content Include="Adminlvcn\1ref\images\miniui\file.png" />
+    <Content Include="Adminlvcn\1ref\images\miniui\firstAndlastcollapse.gif" />
+    <Content Include="Adminlvcn\1ref\images\miniui\firstAndlastexpand.gif" />
+    <Content Include="Adminlvcn\1ref\images\miniui\firstCollapseNode.gif" />
+    <Content Include="Adminlvcn\1ref\images\miniui\firstExpandNode.gif" />
+    <Content Include="Adminlvcn\1ref\images\miniui\folder-open.gif" />
+    <Content Include="Adminlvcn\1ref\images\miniui\folder.gif" />
+    <Content Include="Adminlvcn\1ref\images\miniui\hover.png" />
+    <Content Include="Adminlvcn\1ref\images\miniui\lastCollapseNode.gif" />
+    <Content Include="Adminlvcn\1ref\images\miniui\lastExpandNode.gif" />
+    <Content Include="Adminlvcn\1ref\images\miniui\lastline.gif" />
+    <Content Include="Adminlvcn\1ref\images\miniui\leaf.gif" />
+    <Content Include="Adminlvcn\1ref\images\miniui\loading.gif" />
+    <Content Include="Adminlvcn\1ref\images\miniui\treeline.gif" />
+    <Content Include="Adminlvcn\1ref\images\miniui\treeNodeLine.gif" />
+    <Content Include="Adminlvcn\1ref\Inc\ckeditor.htm" />
+    <Content Include="Adminlvcn\1ref\Inc\libs.htm" />
+    <Content Include="Adminlvcn\1ref\js\error.js" />
+    <Content Include="Adminlvcn\1ref\js\js.js" />
+    <Content Include="Adminlvcn\1ref\js\miniui\miniu1i.js" />
+    <Content Include="Adminlvcn\1ref\js\miniui\miniui.js" />
+    <Content Include="Adminlvcn\1ref\js\pages\product\product.js" />
+    <Content Include="Adminlvcn\1ref\js\pages\product\productbrand.js" />
+    <Content Include="Adminlvcn\1ref\js\pages\product\productclass.js" />
+    <Content Include="Adminlvcn\1ref\js\pages\product\product_edit.js" />
+    <Content Include="Adminlvcn\1ref\js\validation.js" />
+    <Content Include="Adminlvcn\ChannelItemManage\SiteMenu\ajax\ajax.aspx" />
+    <Content Include="Adminlvcn\ChannelItemManage\SiteMenu\css\Modify.css" />
+    <Content Include="Adminlvcn\ChannelItemManage\SiteMenu\js\List.js" />
+    <Content Include="Adminlvcn\ChannelItemManage\SiteMenu\List.aspx" />
+    <Content Include="Adminlvcn\Default.aspx" />
+    <Content Include="Adminlvcn\index.aspx" />
+    <Content Include="Adminlvcn\OrderManage\Order\ajax\ajax.aspx" />
+    <Content Include="Adminlvcn\OrderManage\Order\css\Modify.css" />
+    <Content Include="Adminlvcn\OrderManage\Order\iframe\EditWindow.htm" />
+    <Content Include="Adminlvcn\OrderManage\Order\js\Iframe.js" />
+    <Content Include="Adminlvcn\OrderManage\Order\js\List.js" />
+    <Content Include="Adminlvcn\OrderManage\Order\List.aspx" />
+    <Content Include="Adminlvcn\OrderManage\Order\test.aspx" />
+    <Content Include="Adminlvcn\ProductManage\ProductBrand\ajax\ajax.aspx" />
+    <Content Include="Adminlvcn\ProductManage\ProductBrand\js\List.js" />
+    <Content Include="Adminlvcn\ProductManage\ProductClass\ajax\ajax.aspx" />
+    <Content Include="Adminlvcn\ProductManage\ProductClass\css\List.css" />
+    <Content Include="Adminlvcn\ProductManage\ProductBrand\List.aspx" />
+    <Content Include="Adminlvcn\ProductManage\ProductBrand\Modify.aspx" />
+    <Content Include="Adminlvcn\ProductManage\ProductClass\js\List.js" />
+    <Content Include="Adminlvcn\ProductManage\ProductClass\List.aspx" />
+    <Content Include="Adminlvcn\ProductManage\ProductField\ajax\ajax.aspx" />
+    <Content Include="Adminlvcn\ProductManage\ProductField\ajax\FieldAjax.aspx" />
+    <Content Include="Adminlvcn\ProductManage\ProductField\ajax\FieldsTree.aspx" />
+    <Content Include="Adminlvcn\ProductManage\ProductField\css\Modify.css" />
+    <Content Include="Adminlvcn\ProductManage\ProductField\FieldsList.aspx" />
+    <Content Include="Adminlvcn\ProductManage\ProductField\FieldsModify.aspx" />
+    <Content Include="Adminlvcn\ProductManage\ProductField\js\FieldsList.js" />
+    <Content Include="Adminlvcn\ProductManage\ProductField\js\FieldTree.js" />
+    <Content Include="Adminlvcn\ProductManage\ProductField\js\List.js" />
+    <Content Include="Adminlvcn\ProductManage\ProductField\List.aspx" />
+    <Content Include="Adminlvcn\ProductManage\ProductField\Modify.aspx" />
+    <Content Include="Adminlvcn\ProductManage\Product\ajax\ajax.aspx" />
+    <Content Include="Adminlvcn\ProductManage\Product\css\Modify.css" />
+    <Content Include="Adminlvcn\ProductManage\Product\js\List.js" />
+    <Content Include="Adminlvcn\ProductManage\Product\js\Modify.js" />
+    <Content Include="Adminlvcn\ProductManage\Product\List.aspx" />
+    <Content Include="Adminlvcn\ProductManage\Product\Modify.aspx" />
+    <Content Include="Adminlvcn\Test\test1.aspx" />
+    <Content Include="Adminlvcn\Test\test2.aspx" />
+    <Content Include="base_js\CheckBox.js" />
+    <Content Include="base_js\citys.js" />
+    <Content Include="base_js\common.js" />
+    <Content Include="base_js\DD_belatedPNG_0.0.8a-min.js" />
+    <Content Include="base_js\easyzoom.js" />
+    <Content Include="base_js\ImagesUpload.js" />
+    <Content Include="base_js\jquery-1.6.2.min.js" />
+    <Content Include="base_js\jquery.cookie.js" />
+    <Content Include="base_js\jquery.Jcrop.min.js" />
+    <Content Include="base_js\jquery.lazyload.js" />
+    <Content Include="base_js\jquery.pause.js" />
+    <Content Include="base_js\jQuery.pause.min.js" />
+    <Content Include="base_js\jquery.timers-1.2.js" />
+    <Content Include="base_js\location.js" />
+    <Content Include="base_js\login.js" />
+    <Content Include="base_js\mars.js" />
+    <Content Include="base_js\miniui\locale\en_US.js" />
+    <Content Include="base_js\miniui\locale\zh_CN.js" />
+    <Content Include="base_js\miniui\miniui.js" />
+    <Content Include="base_js\miniui\themes\default\images\accoridon\collapse.gif" />
+    <Content Include="base_js\miniui\themes\default\images\accoridon\expand.gif" />
+    <Content Include="base_js\miniui\themes\default\images\accoridon\header.gif" />
+    <Content Include="base_js\miniui\themes\default\images\accoridon\selected.gif" />
+    <Content Include="base_js\miniui\themes\default\images\buttonedit\button.png" />
+    <Content Include="base_js\miniui\themes\default\images\buttonedit\error.gif" />
+    <Content Include="base_js\miniui\themes\default\images\buttonedit\hover.png" />
+    <Content Include="base_js\miniui\themes\default\images\buttonedit\icon1.gif" />
+    <Content Include="base_js\miniui\themes\default\images\buttonedit\icon2.gif" />
+    <Content Include="base_js\miniui\themes\default\images\buttonedit\icon3.gif" />
+    <Content Include="base_js\miniui\themes\default\images\buttonedit\icons.png" />
+    <Content Include="base_js\miniui\themes\default\images\buttonedit\pressed.png" />
+    <Content Include="base_js\miniui\themes\default\images\button\btn-hover.gif" />
+    <Content Include="base_js\miniui\themes\default\images\button\btn-pressed.gif" />
+    <Content Include="base_js\miniui\themes\default\images\button\btn.gif" />
+    <Content Include="base_js\miniui\themes\default\images\button\button.png" />
+    <Content Include="base_js\miniui\themes\default\images\button\disabled.png" />
+    <Content Include="base_js\miniui\themes\default\images\button\hover.png" />
+    <Content Include="base_js\miniui\themes\default\images\button\icons.png" />
+    <Content Include="base_js\miniui\themes\default\images\button\menu_arrow.png" />
+    <Content Include="base_js\miniui\themes\default\images\button\pressed.png" />
+    <Content Include="base_js\miniui\themes\default\images\button\split-allow-bottom.gif" />
+    <Content Include="base_js\miniui\themes\default\images\button\split_arrow.png" />
+    <Content Include="base_js\miniui\themes\default\images\calendar\btn.gif" />
+    <Content Include="base_js\miniui\themes\default\images\calendar\button.png" />
+    <Content Include="base_js\miniui\themes\default\images\calendar\drop-down.gif" />
+    <Content Include="base_js\miniui\themes\default\images\calendar\drop-up.gif" />
+    <Content Include="base_js\miniui\themes\default\images\calendar\header.gif" />
+    <Content Include="base_js\miniui\themes\default\images\calendar\header.png" />
+    <Content Include="base_js\miniui\themes\default\images\calendar\months.gif" />
+    <Content Include="base_js\miniui\themes\default\images\calendar\nav-left-x2.gif" />
+    <Content Include="base_js\miniui\themes\default\images\calendar\nav-left.gif" />
+    <Content Include="base_js\miniui\themes\default\images\calendar\nav-right-x2.gif" />
+    <Content Include="base_js\miniui\themes\default\images\calendar\nav-right.gif" />
+    <Content Include="base_js\miniui\themes\default\images\calendar\next.gif" />
+    <Content Include="base_js\miniui\themes\default\images\calendar\prev.gif" />
+    <Content Include="base_js\miniui\themes\default\images\calendar\time-down.png" />
+    <Content Include="base_js\miniui\themes\default\images\calendar\time-up.png" />
+    <Content Include="base_js\miniui\themes\default\images\combobox\arrow.gif" />
+    <Content Include="base_js\miniui\themes\default\images\datebox\date.gif" />
+    <Content Include="base_js\miniui\themes\default\images\datebox\datebox_arrow.png" />
+    <Content Include="base_js\miniui\themes\default\images\dragdrop\drop-add.gif" />
+    <Content Include="base_js\miniui\themes\default\images\dragdrop\drop-between.gif" />
+    <Content Include="base_js\miniui\themes\default\images\dragdrop\drop-no.gif" />
+    <Content Include="base_js\miniui\themes\default\images\dragdrop\drop-over.gif" />
+    <Content Include="base_js\miniui\themes\default\images\dragdrop\drop-under.gif" />
+    <Content Include="base_js\miniui\themes\default\images\dragdrop\drop-yes.gif" />
+    <Content Include="base_js\miniui\themes\default\images\gantt\arrow_blue_down.gif" />
+    <Content Include="base_js\miniui\themes\default\images\gantt\arrow_blue_left.gif" />
+    <Content Include="base_js\miniui\themes\default\images\gantt\arrow_blue_right.gif" />
+    <Content Include="base_js\miniui\themes\default\images\gantt\arrow_blue_up.gif" />
+    <Content Include="base_js\miniui\themes\default\images\gantt\arrow_red_down.gif" />
+    <Content Include="base_js\miniui\themes\default\images\gantt\arrow_red_left.gif" />
+    <Content Include="base_js\miniui\themes\default\images\gantt\arrow_red_right.gif" />
+    <Content Include="base_js\miniui\themes\default\images\gantt\arrow_red_up.gif" />
+    <Content Include="base_js\miniui\themes\default\images\gantt\baseline-milestone.gif" />
+    <Content Include="base_js\miniui\themes\default\images\gantt\collapse.gif" />
+    <Content Include="base_js\miniui\themes\default\images\gantt\constraint-finish.gif" />
+    <Content Include="base_js\miniui\themes\default\images\gantt\constraint-start.gif" />
+    <Content Include="base_js\miniui\themes\default\images\gantt\expand.gif" />
+    <Content Include="base_js\miniui\themes\default\images\gantt\finished.gif" />
+    <Content Include="base_js\miniui\themes\default\images\gantt\gvdp.gif" />
+    <Content Include="base_js\miniui\themes\default\images\gantt\header.gif" />
+    <Content Include="base_js\miniui\themes\default\images\gantt\header_bg.gif" />
+    <Content Include="base_js\miniui\themes\default\images\gantt\milestone-red.gif" />
+    <Content Include="base_js\miniui\themes\default\images\gantt\milestone.gif" />
+    <Content Include="base_js\miniui\themes\default\images\gantt\ms-task.gif" />
+    <Content Include="base_js\miniui\themes\default\images\gantt\notes.gif" />
+    <Content Include="base_js\miniui\themes\default\images\gantt\offday.gif" />
+    <Content Include="base_js\miniui\themes\default\images\gantt\summary-top.gif" />
+    <Content Include="base_js\miniui\themes\default\images\gantt\summary.gif" />
+    <Content Include="base_js\miniui\themes\default\images\gantt\summary2.gif" />
+    <Content Include="base_js\miniui\themes\default\images\gantt\taskbg.gif" />
+    <Content Include="base_js\miniui\themes\default\images\gantt\taskbg2.gif" />
+    <Content Include="base_js\miniui\themes\default\images\gantt\taskstatus.gif" />
+    <Content Include="base_js\miniui\themes\default\images\gantt\title_bg.png" />
+    <Content Include="base_js\miniui\themes\default\images\gantt\warning.png" />
+    <Content Include="base_js\miniui\themes\default\images\grid\btn.gif" />
+    <Content Include="base_js\miniui\themes\default\images\grid\col-move-bottom.gif" />
+    <Content Include="base_js\miniui\themes\default\images\grid\col-move-top.gif" />
+    <Content Include="base_js\miniui\themes\default\images\grid\datagrid_header_bg.gif" />
+    <Content Include="base_js\miniui\themes\default\images\grid\datagrid_row_collapse.gif" />
+    <Content Include="base_js\miniui\themes\default\images\grid\datagrid_row_expand.gif" />
+    <Content Include="base_js\miniui\themes\default\images\grid\datagrid_sort_asc.gif" />
+    <Content Include="base_js\miniui\themes\default\images\grid\datagrid_sort_desc.gif" />
+    <Content Include="base_js\miniui\themes\default\images\grid\datagrid_title_bg.png" />
+    <Content Include="base_js\miniui\themes\default\images\grid\dirty.gif" />
+    <Content Include="base_js\miniui\themes\default\images\grid\footer.png" />
+    <Content Include="base_js\miniui\themes\default\images\grid\header-hover.gif" />
+    <Content Include="base_js\miniui\themes\default\images\grid\header-pressed.gif" />
+    <Content Include="base_js\miniui\themes\default\images\grid\header.gif" />
+    <Content Include="base_js\miniui\themes\default\images\grid\header.png" />
+    <Content Include="base_js\miniui\themes\default\images\grid\icons.png" />
+    <Content Include="base_js\miniui\themes\default\images\grid\invalid_line.gif" />
+    <Content Include="base_js\miniui\themes\default\images\grid\loading.gif" />
+    <Content Include="base_js\miniui\themes\default\images\grid\no.gif" />
+    <Content Include="base_js\miniui\themes\default\images\grid\ok.gif" />
+    <Content Include="base_js\miniui\themes\default\images\grid\resize.gif" />
+    <Content Include="base_js\miniui\themes\default\images\grid\rowselected.gif" />
+    <Content Include="base_js\miniui\themes\default\images\grid\row_collapse.gif" />
+    <Content Include="base_js\miniui\themes\default\images\grid\row_expand.gif" />
+    <Content Include="base_js\miniui\themes\default\images\grid\sort_asc.gif" />
+    <Content Include="base_js\miniui\themes\default\images\grid\sort_desc.gif" />
+    <Content Include="base_js\miniui\themes\default\images\grid\title_bg.png" />
+    <Content Include="base_js\miniui\themes\default\images\grid\——header.gif" />
+    <Content Include="base_js\miniui\themes\default\images\layout\east.gif" />
+    <Content Include="base_js\miniui\themes\default\images\layout\header.png" />
+    <Content Include="base_js\miniui\themes\default\images\layout\mini-bottom.gif" />
+    <Content Include="base_js\miniui\themes\default\images\layout\mini-left.gif" />
+    <Content Include="base_js\miniui\themes\default\images\layout\mini-right.gif" />
+    <Content Include="base_js\miniui\themes\default\images\layout\mini-top.gif" />
+    <Content Include="base_js\miniui\themes\default\images\layout\north.gif" />
+    <Content Include="base_js\miniui\themes\default\images\layout\south.gif" />
+    <Content Include="base_js\miniui\themes\default\images\layout\west.gif" />
+    <Content Include="base_js\miniui\themes\default\images\listbox\error.gif" />
+    <Content Include="base_js\miniui\themes\default\images\listbox\header.png" />
+    <Content Include="base_js\miniui\themes\default\images\menu\arrow.png" />
+    <Content Include="base_js\miniui\themes\default\images\menu\checked.gif" />
+    <Content Include="base_js\miniui\themes\default\images\menu\hallow.gif" />
+    <Content Include="base_js\miniui\themes\default\images\menu\hmenubg.png" />
+    <Content Include="base_js\miniui\themes\default\images\menu\item.png" />
+    <Content Include="base_js\miniui\themes\default\images\menu\menu.gif" />
+    <Content Include="base_js\miniui\themes\default\images\menu\menubg.gif" />
+    <Content Include="base_js\miniui\themes\default\images\menu\pressed.png" />
+    <Content Include="base_js\miniui\themes\default\images\menu\sep.png" />
+    <Content Include="base_js\miniui\themes\default\images\messagebox\icon-error.gif" />
+    <Content Include="base_js\miniui\themes\default\images\messagebox\icon-info.gif" />
+    <Content Include="base_js\miniui\themes\default\images\messagebox\icon-question.gif" />
+    <Content Include="base_js\miniui\themes\default\images\messagebox\icon-warning.gif" />
+    <Content Include="base_js\miniui\themes\default\images\messagebox\loading.gif" />
+    <Content Include="base_js\miniui\themes\default\images\mygantt\header.png" />
+    <Content Include="base_js\miniui\themes\default\images\navbar\header.png" />
+    <Content Include="base_js\miniui\themes\default\images\pager\first.gif" />
+    <Content Include="base_js\miniui\themes\default\images\pager\last.gif" />
+    <Content Include="base_js\miniui\themes\default\images\pager\loading.gif" />
+    <Content Include="base_js\miniui\themes\default\images\pager\next.gif" />
+    <Content Include="base_js\miniui\themes\default\images\pager\prev.gif" />
+    <Content Include="base_js\miniui\themes\default\images\pager\refresh.png" />
+    <Content Include="base_js\miniui\themes\default\images\panel\close.gif" />
+    <Content Include="base_js\miniui\themes\default\images\panel\header.gif" />
+    <Content Include="base_js\miniui\themes\default\images\panel\header.png" />
+    <Content Include="base_js\miniui\themes\default\images\panel\resize.gif" />
+    <Content Include="base_js\miniui\themes\default\images\panel\tools.gif" />
+    <Content Include="base_js\miniui\themes\default\images\panel\tool_collapse.gif" />
+    <Content Include="base_js\miniui\themes\default\images\panel\tool_expand.gif" />
+    <Content Include="base_js\miniui\themes\default\images\rgantt\bg.gif" />
+    <Content Include="base_js\miniui\themes\default\images\rgantt\cancel.gif" />
+    <Content Include="base_js\miniui\themes\default\images\rgantt\hdbg.gif" />
+    <Content Include="base_js\miniui\themes\default\images\rgantt\pc.gif" />
+    <Content Include="base_js\miniui\themes\default\images\rgantt\pc_03.gif" />
+    <Content Include="base_js\miniui\themes\default\images\splitter\buttons.gif" />
+    <Content Include="base_js\miniui\themes\default\images\splitter\resize.gif" />
+    <Content Include="base_js\miniui\themes\default\images\splitter\resize_h.gif" />
+    <Content Include="base_js\miniui\themes\default\images\supergrid\btn.gif" />
+    <Content Include="base_js\miniui\themes\default\images\supergrid\col-move-bottom.gif" />
+    <Content Include="base_js\miniui\themes\default\images\supergrid\col-move-top.gif" />
+    <Content Include="base_js\miniui\themes\default\images\supergrid\datagrid_header_bg.gif" />
+    <Content Include="base_js\miniui\themes\default\images\supergrid\datagrid_row_collapse.gif" />
+    <Content Include="base_js\miniui\themes\default\images\supergrid\datagrid_row_expand.gif" />
+    <Content Include="base_js\miniui\themes\default\images\supergrid\datagrid_sort_asc.gif" />
+    <Content Include="base_js\miniui\themes\default\images\supergrid\datagrid_sort_desc.gif" />
+    <Content Include="base_js\miniui\themes\default\images\supergrid\datagrid_title_bg.png" />
+    <Content Include="base_js\miniui\themes\default\images\supergrid\dirty.gif" />
+    <Content Include="base_js\miniui\themes\default\images\supergrid\header-hover.gif" />
+    <Content Include="base_js\miniui\themes\default\images\supergrid\header-pressed.gif" />
+    <Content Include="base_js\miniui\themes\default\images\supergrid\header.gif" />
+    <Content Include="base_js\miniui\themes\default\images\supergrid\invalid_line.gif" />
+    <Content Include="base_js\miniui\themes\default\images\supergrid\loading.gif" />
+    <Content Include="base_js\miniui\themes\default\images\supergrid\no.gif" />
+    <Content Include="base_js\miniui\themes\default\images\supergrid\ok.gif" />
+    <Content Include="base_js\miniui\themes\default\images\supergrid\rowselected.gif" />
+    <Content Include="base_js\miniui\themes\default\images\supergrid\row_collapse.gif" />
+    <Content Include="base_js\miniui\themes\default\images\supergrid\row_expand.gif" />
+    <Content Include="base_js\miniui\themes\default\images\supergrid\sort_asc.gif" />
+    <Content Include="base_js\miniui\themes\default\images\supergrid\sort_desc.gif" />
+    <Content Include="base_js\miniui\themes\default\images\supergrid\title_bg.png" />
+    <Content Include="base_js\miniui\themes\default\images\supergrid\——header.gif" />
+    <Content Include="base_js\miniui\themes\default\images\supertree\arrows.gif" />
+    <Content Include="base_js\miniui\themes\default\images\supertree\collapse.gif" />
+    <Content Include="base_js\miniui\themes\default\images\supertree\expand.gif" />
+    <Content Include="base_js\miniui\themes\default\images\supertree\file.gif" />
+    <Content Include="base_js\miniui\themes\default\images\supertree\folder-open.gif" />
+    <Content Include="base_js\miniui\themes\default\images\supertree\folder.gif" />
+    <Content Include="base_js\miniui\themes\default\images\supertree\loading.gif" />
+    <Content Include="base_js\miniui\themes\default\images\tabs\allow_left.gif" />
+    <Content Include="base_js\miniui\themes\default\images\tabs\allow_right.gif" />
+    <Content Include="base_js\miniui\themes\default\images\tabs\close.gif" />
+    <Content Include="base_js\miniui\themes\default\images\tabs\hover.png" />
+    <Content Include="base_js\miniui\themes\default\images\tabs\tab.png" />
+    <Content Include="base_js\miniui\themes\default\images\tabs\tabs-hover.gif" />
+    <Content Include="base_js\miniui\themes\default\images\tabs\tabs-pressed.gif" />
+    <Content Include="base_js\miniui\themes\default\images\tabs\tabs.gif" />
+    <Content Include="base_js\miniui\themes\default\images\tabs\tabs_leftarrow.png" />
+    <Content Include="base_js\miniui\themes\default\images\tabs\tabs_rightarrow.png" />
+    <Content Include="base_js\miniui\themes\default\images\textboxlist\close.gif" />
+    <Content Include="base_js\miniui\themes\default\images\textboxlist\error.gif" />
+    <Content Include="base_js\miniui\themes\default\images\textboxlist\loading.gif" />
+    <Content Include="base_js\miniui\themes\default\images\textbox\arrow.gif" />
+    <Content Include="base_js\miniui\themes\default\images\textbox\arrow_down.gif" />
+    <Content Include="base_js\miniui\themes\default\images\textbox\arrow_up.gif" />
+    <Content Include="base_js\miniui\themes\default\images\textbox\btn-hover.gif" />
+    <Content Include="base_js\miniui\themes\default\images\textbox\btn-pressed.gif" />
+    <Content Include="base_js\miniui\themes\default\images\textbox\btn.gif" />
+    <Content Include="base_js\miniui\themes\default\images\textbox\error.gif" />
+    <Content Include="base_js\miniui\themes\default\images\toolbar\toolbar.png" />
+    <Content Include="base_js\miniui\themes\default\images\tools\close.gif" />
+    <Content Include="base_js\miniui\themes\default\images\tools\collapse.gif" />
+    <Content Include="base_js\miniui\themes\default\images\tools\expand.gif" />
+    <Content Include="base_js\miniui\themes\default\images\tools\max.gif" />
+    <Content Include="base_js\miniui\themes\default\images\tools\min.gif" />
+    <Content Include="base_js\miniui\themes\default\images\tools\refresh.gif" />
+    <Content Include="base_js\miniui\themes\default\images\tools\resume.gif" />
+    <Content Include="base_js\miniui\themes\default\images\tools\search.gif" />
+    <Content Include="base_js\miniui\themes\default\images\treegrid\collapse.gif" />
+    <Content Include="base_js\miniui\themes\default\images\treegrid\expand.gif" />
+    <Content Include="base_js\miniui\themes\default\images\treegrid\file.png" />
+    <Content Include="base_js\miniui\themes\default\images\treegrid\folder.gif" />
+    <Content Include="base_js\miniui\themes\default\images\treegrid\loading.gif" />
+    <Content Include="base_js\miniui\themes\default\images\tree\arrows.gif" />
+    <Content Include="base_js\miniui\themes\default\images\tree\button.png" />
+    <Content Include="base_js\miniui\themes\default\images\tree\collapse.gif" />
+    <Content Include="base_js\miniui\themes\default\images\tree\collapseLine.gif" />
+    <Content Include="base_js\miniui\themes\default\images\tree\expand.gif" />
+    <Content Include="base_js\miniui\themes\default\images\tree\expandLine.gif" />
+    <Content Include="base_js\miniui\themes\default\images\tree\file.png" />
+    <Content Include="base_js\miniui\themes\default\images\tree\firstAndlastcollapse.gif" />
+    <Content Include="base_js\miniui\themes\default\images\tree\firstAndlastexpand.gif" />
+    <Content Include="base_js\miniui\themes\default\images\tree\firstCollapseNode.gif" />
+    <Content Include="base_js\miniui\themes\default\images\tree\firstExpandNode.gif" />
+    <Content Include="base_js\miniui\themes\default\images\tree\folder-open.gif" />
+    <Content Include="base_js\miniui\themes\default\images\tree\folder.gif" />
+    <Content Include="base_js\miniui\themes\default\images\tree\hover.png" />
+    <Content Include="base_js\miniui\themes\default\images\tree\lastCollapseNode.gif" />
+    <Content Include="base_js\miniui\themes\default\images\tree\lastExpandNode.gif" />
+    <Content Include="base_js\miniui\themes\default\images\tree\lastline.gif" />
+    <Content Include="base_js\miniui\themes\default\images\tree\leaf.gif" />
+    <Content Include="base_js\miniui\themes\default\images\tree\loading.gif" />
+    <Content Include="base_js\miniui\themes\default\images\tree\treeline.gif" />
+    <Content Include="base_js\miniui\themes\default\images\tree\treeNodeLine.gif" />
+    <Content Include="base_js\miniui\themes\default\images\window\footer.png" />
+    <Content Include="base_js\miniui\themes\default\images\window\header.png" />
+    <Content Include="base_js\miniui\themes\default\miniui.css" />
+    <Content Include="base_js\miniui\themes\icons.css" />
+    <Content Include="base_js\miniui\themes\icons\add.gif" />
+    <Content Include="base_js\miniui\themes\icons\addfolder.gif" />
+    <Content Include="base_js\miniui\themes\icons\addnew.gif" />
+    <Content Include="base_js\miniui\themes\icons\cancel.gif" />
+    <Content Include="base_js\miniui\themes\icons\cut.png" />
+    <Content Include="base_js\miniui\themes\icons\date.gif" />
+    <Content Include="base_js\miniui\themes\icons\downgrade.gif" />
+    <Content Include="base_js\miniui\themes\icons\download.gif" />
+    <Content Include="base_js\miniui\themes\icons\edit.gif" />
+    <Content Include="base_js\miniui\themes\icons\filter.gif" />
+    <Content Include="base_js\miniui\themes\icons\find.png" />
+    <Content Include="base_js\miniui\themes\icons\folder-open.gif" />
+    <Content Include="base_js\miniui\themes\icons\folder.gif" />
+    <Content Include="base_js\miniui\themes\icons\goto.gif" />
+    <Content Include="base_js\miniui\themes\icons\help.png" />
+    <Content Include="base_js\miniui\themes\icons\lock.png" />
+    <Content Include="base_js\miniui\themes\icons\new.gif" />
+    <Content Include="base_js\miniui\themes\icons\no.png" />
+    <Content Include="base_js\miniui\themes\icons\nocolordownload.gif" />
+    <Content Include="base_js\miniui\themes\icons\nocolornoimage.gif" />
+    <Content Include="base_js\miniui\themes\icons\nocolorupload.gif" />
+    <Content Include="base_js\miniui\themes\icons\node.png" />
+    <Content Include="base_js\miniui\themes\icons\noimage.gif" />
+    <Content Include="base_js\miniui\themes\icons\nowait.gif" />
+    <Content Include="base_js\miniui\themes\icons\ok.png" />
+    <Content Include="base_js\miniui\themes\icons\open.gif" />
+    <Content Include="base_js\miniui\themes\icons\print.gif" />
+    <Content Include="base_js\miniui\themes\icons\redo.gif" />
+    <Content Include="base_js\miniui\themes\icons\reload.png" />
+    <Content Include="base_js\miniui\themes\icons\remove.gif" />
+    <Content Include="base_js\miniui\themes\icons\save.gif" />
+    <Content Include="base_js\miniui\themes\icons\search.gif" />
+    <Content Include="base_js\miniui\themes\icons\sort.gif" />
+    <Content Include="base_js\miniui\themes\icons\split.gif" />
+    <Content Include="base_js\miniui\themes\icons\tip.png" />
+    <Content Include="base_js\miniui\themes\icons\undo.gif" />
+    <Content Include="base_js\miniui\themes\icons\upgrade.gif" />
+    <Content Include="base_js\miniui\themes\icons\upload.gif" />
+    <Content Include="base_js\miniui\themes\icons\user.png" />
+    <Content Include="base_js\miniui\themes\icons\wait.gif" />
+    <Content Include="base_js\miniui\themes\icons\warning.png" />
+    <Content Include="base_js\miniui\themes\icons\zoomin.gif" />
+    <Content Include="base_js\miniui\themes\icons\zoomout.gif" />
+    <Content Include="base_js\page_s.js" />
+    <Content Include="base_js\users.js" />
+    <Content Include="base_js\validation-input.js" />
+    <Content Include="base_js\YLChinaArea.js" />
+    <Content Include="bin\Web.dll" />
+    <Content Include="bin\Web.pdb" />
+    <Content Include="Global.asax" />
+    <Content Include="Test.aspx" />
+    <Content Include="UpLoadField\Imgs\1.jpg" />
+    <Content Include="UpLoadField\Imgs\2.jpg" />
+    <Content Include="UpLoadField\Imgs\3.jpg" />
+    <Content Include="UpLoadField\Imgs\4.jpg" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adminlvcn\1ref\base_ajax\ajax.aspx.cs">
+      <DependentUpon>ajax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\AccessControlRules.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\AssemblyInfo.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\Connector\CKFinderEvent.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\Connector\CKFinderEventArgs.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\Connector\CKFinderPlugin.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\Connector\CommandHandlers\CommandHandlerBase.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\Connector\CommandHandlers\CopyFilesCommandHandler.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\Connector\CommandHandlers\CreateFolderCommandHandler.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\Connector\CommandHandlers\DeleteFileCommandHandler.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\Connector\CommandHandlers\DeleteFolderCommandHandler.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\Connector\CommandHandlers\DownloadFileCommandHandler.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\Connector\CommandHandlers\ErrorCommandHandler.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\Connector\CommandHandlers\FileUploadCommandHandler.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\Connector\CommandHandlers\GetFilesCommandHandler.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\Connector\CommandHandlers\GetFoldersCommandHandler.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\Connector\CommandHandlers\InitCommandHandler.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\Connector\CommandHandlers\MoveFilesCommandHandler.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\Connector\CommandHandlers\QuickUploadCommandHandler.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\Connector\CommandHandlers\RenameFileCommandHandler.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\Connector\CommandHandlers\RenameFolderCommandHandler.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\Connector\CommandHandlers\ThumbnailCommandHandler.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\Connector\CommandHandlers\XmlCommandHandlerBase.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\Connector\Config.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\Connector\Connector.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\Connector\ConnectorException.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\Connector\Errors.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\Connector\FolderHandler.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\Connector\ImageTools.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\Connector\Lang.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\Connector\OctreeQuantizer.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\Connector\Quantizer.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\Connector\RegexLib.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\Connector\RestartModule.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\Connector\Util.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\Connector\XmlUtil.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\FileBrowser.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\FileBrowserDesigner.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\Settings\AccessControl.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\Settings\AccessControlManager.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\Settings\ConfigFile.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\Settings\Images.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\Settings\ResourceType.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\Settings\ResourceTypeManager.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\Settings\Thumbnails.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\TriStateBool.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\_Plugins\FileEditor\Properties\AssemblyInfo.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\_Plugins\FileEditor\SaveFile.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\_Plugins\ImageResize\ImageResize.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ckfinder\_source\_Plugins\ImageResize\Properties\AssemblyInfo.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\Editor.ascx.cs">
+      <DependentUpon>Editor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlvcn\1ref\controls\Editor.ascx.designer.cs">
+      <DependentUpon>Editor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Adminlvcn\1ref\controls\ImageManage\Manage.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\ImageManage\Photh_Manage.ascx.cs">
+      <DependentUpon>Photh_Manage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlvcn\1ref\controls\ImageManage\Photh_Manage.ascx.designer.cs">
+      <DependentUpon>Photh_Manage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Adminlvcn\1ref\controls\ImageManage\WebAlbumManage.ashx.cs">
+      <DependentUpon>WebAlbumManage.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Adminlvcn\1ref\controls\Left.ascx.cs">
+      <DependentUpon>Left.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlvcn\1ref\controls\Left.ascx.designer.cs">
+      <DependentUpon>Left.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Adminlvcn\1ref\controls\UpLoad\UpLoad\Edit.ashx.cs">
+      <DependentUpon>Edit.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Adminlvcn\1ref\controls\UpLoad\UpLoad\Images.cs" />
+    <Compile Include="Adminlvcn\1ref\controls\UpLoad\UpLoad\ImageView.ashx.cs">
+      <DependentUpon>ImageView.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Adminlvcn\1ref\controls\UpLoad\UpLoad\Show.ashx.cs">
+      <DependentUpon>Show.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Adminlvcn\1ref\controls\UpLoad\UpLoad\UpLoad.ascx.cs">
+      <DependentUpon>UpLoad.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlvcn\1ref\controls\UpLoad\UpLoad\UpLoad.ascx.designer.cs">
+      <DependentUpon>UpLoad.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Adminlvcn\1ref\controls\UpLoad\UpLoad\UpLoadFile.aspx.cs">
+      <DependentUpon>UpLoadFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlvcn\1ref\controls\UpLoad\UpLoad\UpLoadFile.aspx.designer.cs">
+      <DependentUpon>UpLoadFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adminlvcn\ChannelItemManage\SiteMenu\ajax\ajax.aspx.cs">
+      <DependentUpon>ajax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlvcn\ChannelItemManage\SiteMenu\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlvcn\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlvcn\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adminlvcn\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlvcn\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adminlvcn\OrderManage\Order\ajax\ajax.aspx.cs">
+      <DependentUpon>ajax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlvcn\OrderManage\Order\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlvcn\OrderManage\Order\test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlvcn\OrderManage\Order\test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adminlvcn\ProductManage\ProductBrand\ajax\ajax.aspx.cs">
+      <DependentUpon>ajax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlvcn\ProductManage\ProductBrand\ajax\ajax.aspx.designer.cs">
+      <DependentUpon>ajax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adminlvcn\ProductManage\ProductBrand\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlvcn\ProductManage\ProductBrand\Modify.aspx.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlvcn\ProductManage\ProductClass\ajax\ajax.aspx.cs">
+      <DependentUpon>ajax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlvcn\ProductManage\ProductClass\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlvcn\ProductManage\ProductClass\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adminlvcn\ProductManage\ProductField\ajax\ajax.aspx.cs">
+      <DependentUpon>ajax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlvcn\ProductManage\ProductField\ajax\ajax.aspx.designer.cs">
+      <DependentUpon>ajax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adminlvcn\ProductManage\ProductField\ajax\FieldAjax.aspx.cs">
+      <DependentUpon>FieldAjax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlvcn\ProductManage\ProductField\ajax\FieldAjax.aspx.designer.cs">
+      <DependentUpon>FieldAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adminlvcn\ProductManage\ProductField\ajax\FieldsTree.aspx.cs">
+      <DependentUpon>FieldsTree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlvcn\ProductManage\ProductField\ajax\FieldsTree.aspx.designer.cs">
+      <DependentUpon>FieldsTree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adminlvcn\ProductManage\ProductField\FieldsList.aspx.cs">
+      <DependentUpon>FieldsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlvcn\ProductManage\ProductField\FieldsList.aspx.designer.cs">
+      <DependentUpon>FieldsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adminlvcn\ProductManage\ProductField\FieldsModify.aspx.cs">
+      <DependentUpon>FieldsModify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlvcn\ProductManage\ProductField\FieldsModify.aspx.designer.cs">
+      <DependentUpon>FieldsModify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adminlvcn\ProductManage\ProductField\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlvcn\ProductManage\ProductField\Modify.aspx.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlvcn\ProductManage\Product\ajax\ajax.aspx.cs">
+      <DependentUpon>ajax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlvcn\ProductManage\Product\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlvcn\ProductManage\Product\Modify.aspx.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlvcn\ProductManage\Product\Modify.aspx.designer.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adminlvcn\Test\test1.aspx.cs">
+      <DependentUpon>test1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlvcn\Test\test1.aspx.designer.cs">
+      <DependentUpon>test1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adminlvcn\Test\test2.aspx.cs">
+      <DependentUpon>test2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlvcn\Test\test2.aspx.designer.cs">
+      <DependentUpon>test2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Adminlvcn\ProductManage\ProductBrand\css\" />
+    <Folder Include="Adminlvcn\ProductManage\ProductKeyWords\" />
+    <Folder Include="Adminlvcn\ProductManage\ProductRecycleBin\" />
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{5129EE79-E20E-4D69-9452-C6F8940B1614}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{E3D8759A-C5EB-402D-9F10-F5C6029A8D1A}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{06B948E6-B3E2-4CE2-BFDC-5988E28ED422}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Adminlvcn\1ref\controls\ckeditor\.htaccess" />
+    <None Include="Adminlvcn\1ref\controls\ckeditor\ckeditor.pack" />
+    <None Include="Adminlvcn\1ref\controls\ckeditor\ckeditor.php" />
+    <None Include="Adminlvcn\1ref\controls\ckeditor\ckeditor_php4.php" />
+    <None Include="Adminlvcn\1ref\controls\ckeditor\ckeditor_php5.php" />
+    <None Include="Adminlvcn\1ref\controls\ckeditor\_samples\assets\output_for_flash.fla" />
+    <None Include="Adminlvcn\1ref\controls\ckeditor\_samples\php\advanced.php" />
+    <None Include="Adminlvcn\1ref\controls\ckeditor\_samples\php\events.php" />
+    <None Include="Adminlvcn\1ref\controls\ckeditor\_samples\php\replace.php" />
+    <None Include="Adminlvcn\1ref\controls\ckeditor\_samples\php\replaceall.php" />
+    <None Include="Adminlvcn\1ref\controls\ckeditor\_samples\php\standalone.php" />
+    <None Include="Adminlvcn\1ref\controls\ckeditor\_samples\sample_posteddata.php" />
+    <None Include="Adminlvcn\1ref\controls\ckfinder\plugins\fileeditor\codemirror\LICENSE" />
+    <None Include="Adminlvcn\1ref\controls\ckfinder\userfiles\.htaccess" />
+    <None Include="Adminlvcn\1ref\controls\ckfinder\_source\CKFinderKey.snk" />
+    <Content Include="Adminlvcn\1ref\controls\ImageManage\WebAlbumManage.ashx" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\UpLoad\Edit.ashx" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\UpLoad\ImageView.ashx" />
+    <Content Include="Adminlvcn\1ref\controls\UpLoad\UpLoad\Show.ashx" />
+    <None Include="base_js\miniui\themes\default\images\tree\Thumbs.db" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2509</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3D567CD3-DACD-4121-AD81-4F1ACFF2AB6E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>lv_B2C.DAL</RootNamespace>
+    <AssemblyName>lv_B2C.DAL</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activity.cs" />
+    <Compile Include="ActivityExt.cs" />
+    <Compile Include="Ad.cs" />
+    <Compile Include="AdExt.cs" />
+    <Compile Include="AdPage.cs" />
+    <Compile Include="AdPageExt.cs" />
+    <Compile Include="AdPosition.cs" />
+    <Compile Include="AdPositionExt.cs" />
+    <Compile Include="Article.cs" />
+    <Compile Include="ArticleClass.cs" />
+    <Compile Include="ArticleClassExt.cs" />
+    <Compile Include="ArticleConn.cs" />
+    <Compile Include="ArticleConnExt.cs" />
+    <Compile Include="ArticleExt.cs" />
+    <Compile Include="Cart.cs" />
+    <Compile Include="CartExt.cs" />
+    <Compile Include="ChannelItem.cs" />
+    <Compile Include="ChannelItemExt.cs" />
+    <Compile Include="Citys.cs" />
+    <Compile Include="CitysExt.cs" />
+    <Compile Include="Comment.cs" />
+    <Compile Include="CommentExt.cs" />
+    <Compile Include="Extend.cs" />
+    <Compile Include="ExtendExt.cs" />
+    <Compile Include="ExtendType.cs" />
+    <Compile Include="ExtendTypeExt.cs" />
+    <Compile Include="Fields.cs" />
+    <Compile Include="FieldsClass.cs" />
+    <Compile Include="FieldsExt.cs" />
+    <Compile Include="Help.cs" />
+    <Compile Include="HelpExt.cs" />
+    <Compile Include="HomePage.cs" />
+    <Compile Include="HomePageExt.cs" />
+    <Compile Include="KeyWords.cs" />
+    <Compile Include="KeyWordsConn.cs" />
+    <Compile Include="KeyWordsConnExt.cs" />
+    <Compile Include="KeyWordsExt.cs" />
+    <Compile Include="LogDetail.cs" />
+    <Compile Include="LogDetailExt.cs" />
+    <Compile Include="LogisticsCompany.cs" />
+    <Compile Include="LogisticsCompanyExt.cs" />
+    <Compile Include="LogisticsInfo.cs" />
+    <Compile Include="LogisticsInfoExt.cs" />
+    <Compile Include="LogisticsSon.cs" />
+    <Compile Include="LogisticsSonExt.cs" />
+    <Compile Include="Msg.cs" />
+    <Compile Include="MsgExt.cs" />
+    <Compile Include="OrderInfo.cs" />
+    <Compile Include="OrderInfoExt.cs" />
+    <Compile Include="OrderLog.cs" />
+    <Compile Include="OrderLogExt.cs" />
+    <Compile Include="OrderProduct.cs" />
+    <Compile Include="OrderProductExt.cs" />
+    <Compile Include="OrderView.cs" />
+    <Compile Include="PriceAnnal.cs" />
+    <Compile Include="PriceAnnalExt.cs" />
+    <Compile Include="Product.cs" />
+    <Compile Include="ProductBrand.cs" />
+    <Compile Include="ProductClass.cs" />
+    <Compile Include="ProductClassExt.cs" />
+    <Compile Include="ProductConn.cs" />
+    <Compile Include="ProductConnExt.cs" />
+    <Compile Include="ProductExt.cs" />
+    <Compile Include="ProductFieldClass.cs" />
+    <Compile Include="ProductFieldClassExt.cs" />
+    <Compile Include="ProductFields.cs" />
+    <Compile Include="ProductFieldsConn.cs" />
+    <Compile Include="ProductFieldsExt.cs" />
+    <Compile Include="ProductPackage.cs" />
+    <Compile Include="ProductPackageExt.cs" />
+    <Compile Include="ProductPics.cs" />
+    <Compile Include="ProductPicsExt.cs" />
+    <Compile Include="ProductStock.cs" />
+    <Compile Include="ProductStockExt.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QA.cs" />
+    <Compile Include="QAExt.cs" />
+    <Compile Include="Related.cs" />
+    <Compile Include="RelatedExt.cs" />
+    <Compile Include="ShippingAddress.cs" />
+    <Compile Include="ShippingAddressExt.cs" />
+    <Compile Include="Site.cs" />
+    <Compile Include="SiteExt.cs" />
+    <Compile Include="UserAccount.cs" />
+    <Compile Include="UserAccountExt.cs" />
+    <Compile Include="UserGroup.cs" />
+    <Compile Include="UserGroupExt.cs" />
+    <Compile Include="UserInfo.cs" />
+    <Compile Include="UserInfoExt.cs" />
+    <Compile Include="UserRight.cs" />
+    <Compile Include="UserRightExt.cs" />
+    <Compile Include="UserRoles.cs" />
+    <Compile Include="UserRolesExt.cs" />
+    <Compile Include="WebAlbum.cs" />
+    <Compile Include="WebAlbumExt.cs" />
+    <Compile Include="WebConfig.cs" />
+    <Compile Include="WebConfigExt.cs" />
+    <Compile Include="WebImage.cs" />
+    <Compile Include="WebImageExt.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DBUtility\DBUtility.csproj">
+      <Project>{0988C62E-247F-471F-A183-DB509C7A3839}</Project>
+      <Name>DBUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{06B948E6-B3E2-4CE2-BFDC-5988E28ED422}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

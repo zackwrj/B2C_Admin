@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+html{color:#000; background:#fff;  -webkit-text-size-adjust:none;  }
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,legend,input,textarea,p,th,td{margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+fieldset,img{border:0;}
+li{list-style:none;}
+em,strong,th{font-style:normal;font-weight:normal;}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}
+input,textarea,select {*font-size:100%;}
+table{border-collapse:collapse;border-spacing:0;}
+/*  body  */
+img{ vertical-align:bottom;}
+body{font-size:12px;font-family:微软雅黑; color:#333333;}
+a{ color:#333333; outline:none;}
+a:link,a:visited{ text-decoration:none;outline:none;}
+a:hover{text-decoration:none;}

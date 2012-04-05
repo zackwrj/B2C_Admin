@@ -1,0 +1,5 @@
+﻿
+
+#order_orderNum{color:blue;}
+#order_ActualPayMoney,#get_total{color:Red;font-weight:bold;}
+#get_discount{color:Green;}

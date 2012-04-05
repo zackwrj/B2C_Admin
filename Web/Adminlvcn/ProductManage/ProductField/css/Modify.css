@@ -1,0 +1,13 @@
+﻿.validGroup{padding: 5px;margin: 0;color: Red;font-size: 12px;margin-left: 15px;}
+.validGroup li{padding-top: 4px;float:left;margin-right:30px;margin-bottom:5px;}
+.validGroup li a{color: #FF0000;font-family: Tahoma;font-size: 9pt;padding-bottom: 2px;border-bottom: 1px dashed #FF7700;text-decoration: none;}
+.validGroup li a:hover{color: #ff7700;}
+ul.validGroup{list-style: disc;}
+ol.validGroup{list-style: decimal;}
+        
+ul.product_list{padding:0px;margin:auto;padding-top:10px;width:500px;}
+ul.product_list li{list-style:none;margin-bottom:10px;}
+ul.product_list li label{width:100px;display:block;float:left;text-align:right;height:30px;line-height:30px;}
+/* ul.product_list li input{height:22px;line-height:22px;}*/
+ul.product_list li b{font-weight:normal;color:#aaa;width:400px;display:block;}
+ul.product_list li .in_cb{}

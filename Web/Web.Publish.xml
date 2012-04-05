@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="F:\IIS\lv_B2C" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="配置文件1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/Web.pdb" publishTime="03/19/2012 11:56:01" />
+    <file relUrl="Site.Master" publishTime="03/13/2012 09:04:43" />
+    <file relUrl="Adminlvcn/MasterPage.Master" publishTime="03/16/2012 18:12:40" />
+    <file relUrl="Adminlvcn/1ref/css/left.css" publishTime="03/13/2012 10:35:50" />
+    <file relUrl="bin/OpenSmtp.dll" publishTime="11/25/2010 09:43:38" />
+    <file relUrl="Adminlvcn/1ref/css/top.css" publishTime="03/13/2012 10:31:09" />
+    <file relUrl="Adminlvcn/1ref/css/main.css" publishTime="03/13/2012 10:31:09" />
+    <file relUrl="bin/Model.dll" publishTime="03/19/2012 11:55:55" />
+    <file relUrl="bin/Excel.dll" publishTime="11/25/2010 09:43:38" />
+    <file relUrl="bin/lv_Common.pdb" publishTime="03/19/2012 11:55:57" />
+    <file relUrl="bin/lv_B2C.DAL.pdb" publishTime="03/19/2012 11:55:59" />
+    <file relUrl="Web.config" publishTime="03/19/2012 11:56:13" />
+    <file relUrl="bin/lv_B2C.BLL.pdb" publishTime="03/19/2012 11:56:00" />
+    <file relUrl="bin/lv_DBUtility.dll" publishTime="03/19/2012 11:55:54" />
+    <file relUrl="bin/lv_Common.dll" publishTime="03/19/2012 11:55:57" />
+    <file relUrl="Adminlvcn/1ref/css/global.css" publishTime="03/13/2012 10:32:37" />
+    <file relUrl="bin/lv_DBUtility.pdb" publishTime="03/19/2012 11:55:54" />
+    <file relUrl="bin/Web.dll" publishTime="03/19/2012 11:56:02" />
+    <file relUrl="Global.asax" publishTime="03/13/2012 09:04:43" />
+    <file relUrl="bin/lv_B2C.DAL.dll" publishTime="03/19/2012 11:55:59" />
+    <file relUrl="bin/MySql.Data.dll" publishTime="02/07/2008 16:18:26" />
+    <file relUrl="bin/lv_B2C.BLL.dll" publishTime="03/19/2012 11:56:00" />
+    <file relUrl="Adminlvcn/index.aspx" publishTime="03/16/2012 17:35:22" />
+    <file relUrl="Test.aspx" publishTime="03/16/2012 10:37:54" />
+    <file relUrl="bin/COM.Excel.dll" publishTime="11/25/2010 09:43:37" />
+    <file relUrl="bin/Model.pdb" publishTime="03/19/2012 11:55:55" />
+  </publishProfile>
+</publishData>

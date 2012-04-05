@@ -1,0 +1,45 @@
+﻿
+li{list-style:none;}
+ul{margin:0;padding:0;}
+
+.New_Button, .Edit_Button, .Delete_Button, .Update_Button, .Cancel_Button
+{
+    font-size:11px;color:#1B3F91;font-family:微软雅黑;  
+    margin-right:5px;
+}
+
+.window_ul{margin:0px;padding:0px;width:100%;text-align:center;}
+.window_ul li{list-style:none; padding:5px;margin:auto; width:300px;height:20px;overflow:hidden;}
+.window_ul li label{float:left;width:80px;display:block;text-align:right;}
+
+.validGroup{padding: 5px;margin: 0;color: Red;font-size: 12px;margin-left: 15px;}
+.validGroup li{padding-top: 4px;float:left;margin-right:30px;margin-bottom:5px;}
+.validGroup li a{color: #FF0000;font-family: Tahoma;font-size: 9pt;padding-bottom: 2px;border-bottom: 1px dashed #FF7700;text-decoration: none;}
+.validGroup li a:hover{color: #ff7700;}
+ul.validGroup{list-style: disc;}
+ol.validGroup{list-style: decimal;}
+        
+ul.product_list{padding:0px;margin:auto;padding-top:10px;width:500px;}
+ul.product_list li{list-style:none;margin-bottom:10px;}
+ul.product_list li label{width:100px;display:block;float:left;text-align:right;height:30px;line-height:30px;}
+/* ul.product_list li input{height:22px;line-height:22px;}*/
+ul.product_list li b{font-weight:normal;color:#aaa;width:400px;display:block;}
+ul.product_list li .in_cb{}
+
+
+.win_contents,.win_tabs,.win_bottom{width:100%;height:auto;}
+.win_contents ul{width:220px;height:30px;float:left;display:block;margin-left:15px;}
+.win_contents li{display:inline;min-width:50px;height:30px;line-height:30px;}
+
+.win_tabs{border-left:1px solid #9F9F9F;border-top:1px solid #9F9F9F;margin-top:10px;}
+.win_tabs thead td{background:url("/base_js/miniui/themes/default/images/grid/header.png") repeat-x scroll 0 0 #E7EBEF;height:19px;line-height:19px;text-align:center;border-bottom:1px solid #A5ACB5;border-right:1px solid #A5ACB5}
+.win_tabs tbody td{text-align:center;border-bottom:1px solid #A5ACB5;border-right:1px solid #A5ACB5;padding:5px;}
+.win_tabs tbody td input{width:50px;}
+
+.win_bottom{margin-top:10px;}
+.win_bottom ul{ width:100%;height:20px}
+.win_bottom ul.light li{color:#aaa;}
+.win_bottom li{display:inline;height:20px;line-height:20px;}
+
+.header_ul{width:100%;height:25px;}
+.header_ul li{float:left;height:25px;line-height:25px;display:inline;margin-left:10px;}
