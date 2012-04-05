@@ -114,7 +114,7 @@ namespace lv_B2C.Web.Adminlvcn._1ref.base_ajax
                 sb.Append("{id: \"" + listArticleClass[i].ArticleClassID
                     + "\", text: \"" + listArticleClass[i].Title + "\"");
 
-                if (bllArticleClass.HasProductClassSon(listArticleClass[i].ArticleClassID))
+                if (bllArticleClass.HasArticleClassSon(listArticleClass[i].ArticleClassID))
                 {
                     sb.Append(",children:[");
                     RecursionArticleNav(listArticleClass[i].ArticleClassID);

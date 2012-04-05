@@ -8,7 +8,7 @@ using System.Reflection;
 using System.Collections;
 using System.Text;
 
-namespace lv_B2C.Web.Adminlvcn.ArticleManage.ProductClass.ajax
+namespace lv_B2C.Web.Adminlvcn.ArticleManage.ArticleClass.ajax
 {
     public partial class ajax : System.Web.UI.Page
     {
@@ -71,7 +71,7 @@ namespace lv_B2C.Web.Adminlvcn.ArticleManage.ProductClass.ajax
                 sb.Append("{id: \"" + listArticleClass[i].ArticleClassID
                     + "\", text: \"" + listArticleClass[i].Title  + "\"");
 
-                if (bllArticleClass.HasProductClassSon(listArticleClass[i].ArticleClassID))
+                if (bllArticleClass.HasArticleClassSon(listArticleClass[i].ArticleClassID))
                 {
                     sb.Append(",children:[");
                     RecursionNav(listArticleClass[i].ArticleClassID);

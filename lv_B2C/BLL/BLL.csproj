@@ -47,6 +47,8 @@
     <Compile Include="Base\BasePageAdmin.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="DBExt\LogisticsInfoExt.cs" />
+    <Compile Include="DBExt\ProductExt.cs" />
     <Compile Include="DB\Activity.cs" />
     <Compile Include="DBExt\ActivityExt.cs" />
     <Compile Include="DB\Ad.cs" />
