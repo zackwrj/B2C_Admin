@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Text;
 using System.Collections.Generic;
-using System.Data;
-using lv_Common;
-using lv_B2C.Model;
-namespace lv_B2C.BLL
+using System.Linq;
+using System.Text;
+
+namespace lv_B2C.BLL.DB
 {
-    //Article
-    public partial class ArticleConnExt : ArticleConn
+    public class ArticleConnExt : ArticleConn
     {
 
     }

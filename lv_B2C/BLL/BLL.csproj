@@ -144,6 +144,7 @@
     <Compile Include="DB\WebConfigExt.cs" />
     <Compile Include="DB\WebImage.cs" />
     <Compile Include="DB\WebImageExt.cs" />
+    <Compile Include="Enums\Logistics.cs" />
     <Compile Include="Enums\OpenMode.cs" />
     <Compile Include="DB\FieldsExt.cs" />
     <Compile Include="DB\FieldsClassExt.cs" />

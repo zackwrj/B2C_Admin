@@ -103,7 +103,9 @@ function editWindow() {
         mini.alert("请选择订单");
     }
 }
-
+function saveWindow() { 
+    
+}
 function Span(obj) {
     return $("#editWin span[name='" + obj + "']");
 }
@@ -182,10 +184,7 @@ function onAdd(e) {
     mini.alert("新增");
 }
 function onEdit(e) {
-    var row = grid.getSelected();
-    if (row) {
-        mini.alert("编辑：" + row.Title);
-    }
+    editWindow();
 }
 
 //批删除
@@ -228,23 +227,12 @@ function onActionRenderer(e) {
     var uid = record._uid; //行索引
     var rowIndex = e.rowIndex;
 
-    var s = '<a class="Edit_Button" href="javascript:fEditRow(\'' + uid + '\')" target="_blank"><img title="快速编辑商品" src="/base_js/miniui/themes/icons/node.png"></a>'
-            + '<a class="Edit_Button" href="###" target="_blank"><img title="查看商品" src="/base_js/miniui/themes/icons/goto.gif"></a>'
-            + '<a class="Edit_Button" href="' + editRow(uid) + '" target="main"><img title="编辑商品" src="/base_js/miniui/themes/icons/edit.gif"></a>'
-            + '<a class="Delete_Button" href="javascript:delRow(\'' + uid + '\')"><img title="删除商品" src="/base_js/miniui/themes/icons/remove.gif"></a>';
-
-    if (grid.isEditingRow(record)) {
-        s = '<a class="Update_Button" href="javascript:updateRow(\'' + uid + '\')">保存</a>'
-                    + '<a class="Cancel_Button" href="javascript:cancelRow(\'' + uid + '\')">取消</a>'
-    }
+    var s = '<a class="Edit_Button" onclick="editWindow()" target="_blank"><img title="快速编辑订单" src="/base_js/miniui/themes/icons/node.png"></a>'
+            + '<a class="Edit_Button" href="' + editRow(uid) + '" target="main"><img title="编辑订单" src="/base_js/miniui/themes/icons/edit.gif"></a>'
+            + '<a class="Delete_Button" href="javascript:delRow(\'' + uid + '\')"><img title="删除订单" src="/base_js/miniui/themes/icons/remove.gif"></a>';
     return s;
 }
 
-function editCell(e) {
-    getCellEl(e.record, e.column);
-    grid.cancelEdit();
-
-}
 //右键快速编辑
 function onActionFE() {
     var uid = record._uid; //行索引
