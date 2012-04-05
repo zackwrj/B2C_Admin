@@ -50,7 +50,7 @@
     <Compile Include="DB\Activity.cs" />
     <Compile Include="DBExt\ActivityExt.cs" />
     <Compile Include="DB\Ad.cs" />
-    <Compile Include="DB\AdExt.cs" />
+    <Compile Include="DBExt\AdExt.cs" />
     <Compile Include="DB\AdPage.cs" />
     <Compile Include="DBExt\AdPageExt.cs" />
     <Compile Include="DB\AdPosition.cs" />
@@ -62,7 +62,7 @@
     <Compile Include="DBExt\ArticleConnExt.cs" />
     <Compile Include="DBExt\ArticleExt.cs" />
     <Compile Include="DB\Cart.cs" />
-    <Compile Include="DB\CartExt.cs" />
+    <Compile Include="DBExt\CartExt.cs" />
     <Compile Include="DB\ChannelItem.cs" />
     <Compile Include="DBExt\ChannelItemExt.cs" />
     <Compile Include="DB\Citys.cs" />
@@ -108,7 +108,7 @@
     <Compile Include="DBExt\ProductClassExt.cs" />
     <Compile Include="DB\ProductConn.cs" />
     <Compile Include="DBExt\ProductConnExt.cs" />
-    <Compile Include="DBExt\ProductExt.cs" />
+    <Compile Include="DB\ProductExt.cs" />
     <Compile Include="DB\ProductFieldClass.cs" />
     <Compile Include="DBExt\ProductFieldClassExt.cs" />
     <Compile Include="DB\ProductFields.cs" />
@@ -144,7 +144,7 @@
     <Compile Include="DBExt\WebConfigExt.cs" />
     <Compile Include="DB\WebImage.cs" />
     <Compile Include="DBExt\WebImageExt.cs" />
-    <Compile Include="Enums\Logistics.cs" />
+    <Compile Include="Enums\LogisticsType.cs" />
     <Compile Include="Enums\OpenMode.cs" />
     <Compile Include="DBExt\FieldsExt.cs" />
     <Compile Include="DBExt\FieldsClassExt.cs" />

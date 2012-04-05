@@ -1450,6 +1450,13 @@
     <Content Include="Adminlvcn\ChannelItemManage\SiteMenu\List.aspx" />
     <Content Include="Adminlvcn\Default.aspx" />
     <Content Include="Adminlvcn\index.aspx" />
+    <Content Include="Adminlvcn\LogisticsManage\Freight\ajax\ajax.aspx" />
+    <Content Include="Adminlvcn\LogisticsManage\Freight\css\Modify.css" />
+    <Content Include="Adminlvcn\LogisticsManage\Freight\js\List.js" />
+    <Content Include="Adminlvcn\LogisticsManage\Freight\js\Modify.js" />
+    <Content Include="Adminlvcn\LogisticsManage\Freight\List.aspx" />
+    <Content Include="Adminlvcn\LogisticsManage\Freight\Modify.aspx" />
+    <Content Include="Adminlvcn\LogisticsManage\Freight\WebForm1.aspx" />
     <Content Include="Adminlvcn\OrderManage\Order\ajax\ajax.aspx" />
     <Content Include="Adminlvcn\OrderManage\Order\css\Modify.css" />
     <Content Include="Adminlvcn\OrderManage\Order\iframe\EditWindow.htm" />
@@ -1969,6 +1976,28 @@
     <Compile Include="Adminlvcn\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Adminlvcn\LogisticsManage\Freight\ajax\ajax.aspx.cs">
+      <DependentUpon>ajax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlvcn\LogisticsManage\Freight\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlvcn\LogisticsManage\Freight\Modify.aspx.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlvcn\LogisticsManage\Freight\Modify.aspx.designer.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adminlvcn\LogisticsManage\Freight\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlvcn\LogisticsManage\Freight\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Adminlvcn\OrderManage\Order\ajax\ajax.aspx.cs">
       <DependentUpon>ajax.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2102,7 +2131,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Adminlvcn\LogisticsManage\Freight\" />
     <Folder Include="Adminlvcn\LogisticsManage\LogisticsCommany\" />
     <Folder Include="Adminlvcn\ProductManage\ProductBrand\css\" />
     <Folder Include="Adminlvcn\ProductManage\ProductKeyWords\" />
