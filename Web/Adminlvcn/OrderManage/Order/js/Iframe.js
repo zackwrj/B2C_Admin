@@ -4,7 +4,6 @@
 //        grid.sortBy("ProductId", "desc");
 //加载商品ssss信息End23123123
 
-//tfyfghfgh
 mini.parse();
 
 var form = new mini.Form("form1");
