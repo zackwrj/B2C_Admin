@@ -69,8 +69,8 @@
             </div>
             <div title="文章管理">
                 <ul id="tree5" onselectnode="onNodeSelect" class="mini-tree" style="width:100%;height:100%;" showTreeIcon="true" textField="text" valueField="id" >       
-                     <li><span>文章列表</span></li>
-                     <li><span>文章分类</span></li>
+                     <li><a href="ArticleManage/Article/List.aspx" target="main" onclick='waitClick()'>文章列表</a></li>
+                     <li><a href="ArticleManage/ArticleClass/List.aspx" target="main" onclick='waitClick()'>文章分类</a></li>
                      <li><span>文章关键字</span></li>
                 </ul>
             </div>
